@@ -1,0 +1,89 @@
+[[plugins]] # toml syntax
+repo = 'cespare/vim-toml'
+on_ft = ['toml']
+
+[[plugins]]
+repo = 'billyvg/tigris.nvim'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'Shougo/neco-vim'
+on_ft = ['vim']
+
+[[plugins]]
+repo = 'fatih/vim-go'
+on_ft = ['go']
+
+[[plugins]]
+repo = 'zchee/deoplete-go'
+build = 'make'
+on_ft = ['go']
+on_i = 1
+
+[[plugins]]
+repo = 'carlitux/deoplete-ternjs'
+on_ft = ['javascript', 'javascript.jsx', 'coffee']
+on_i = 1
+
+[[plugins]]
+repo = 'Galooshi/vim-import-js'
+build = 'npm install -g import-js'
+on_ft = ['javascript', 'javascript.jsx', 'coffee']
+on_i = 1
+
+[[plugins]]
+repo = 'billyvg/deoplete-import-js'
+on_ft = ['javascript', 'javascript.jsx', 'coffee']
+on_i = 1
+
+[[plugins]]
+repo = 'uplus/deoplete-solargraph'
+on_i = 1
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+on_ft = ['ruby']
+on_i = 1
+
+[[plugins]]
+repo = 'osyo-manga/vim-monster'
+on_i = 1
+on_ft = ['ruby']
+hook_add = '''
+let g:monster#completion#rcodetools#backend = "async_rct_complete"
+let g:deoplete#sources#omni#input_patterns = {
+  \ "ruby" : '[^. *\t]\.\w*\|\h\w*::',
+  \}
+'''
+
+[[plugins]]
+repo = 'ponko2/deoplete-fish'
+on_i = 1
+on_ft = ['fish']
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = ['coffee']
+
+[[plugins]]
+repo = 'alexgenco/neovim-ruby'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
+on_i = 1
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'AndrewRadev/splitjoin.vim'
+on_ft = ['go']
+
+[[plugins]]
+repo = 'SirVer/ultisnips'
+on_ft = ['go']
+
+[[plugins]]
+repo = 'dag/vim-fish'
+on_ft = ['fish']
+
