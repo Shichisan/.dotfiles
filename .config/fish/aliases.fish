@@ -3,6 +3,15 @@ alias n 'nvim'
 alias cdnv 'cd; and cd ~/.config/nvim'
 alias cdf 'cd; and cd ~/.config/fish'
 
+# tmux関連
+alias t "tmux"
+alias tl "tmux ls"
+alias tlc "tmux lsc"
+alias ta "tmux a"
+alias tns "tmux new -s"
+alias tkss "tmux kill-session"
+alias tkse "tmux kill-server"
+
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
 alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
@@ -130,9 +139,3 @@ function git_current_branch
   string replace 'refs/heads/' "" $ref
 end
 
-# copy fish and nvim config files
-alias cpf 'cp -R ~/.config/fish/config.fish ~/dev/src/github.com/Shichisan/self_resources/settings/fish/config.fish; and cp -R ~/.config/fish/Keybinds.fish ~/dev/src/github.com/Shichisan/self_resources/settings/fish/Keybinds.fish; and cp ~/.config/fish/env.fish ~/dev/src/github.com/Shichisan/self_resources/settings/fish/env.fish; and cp -R ~/.config/fish/aliases.fish ~/dev/src/github.com/Shichisan/self_resources/settings/fish/aliases.fish'
-
-alias cpnv 'cp -R ~/.config/nvim/init.vim ~/dev/src/github.com/Shichisan/self_resources/settings/neovim/init.vim; and cp -R ~/.config/nvim/dein.toml ~/dev/src/github.com/Shichisan/self_resources/settings/neovim/dein.toml; and cp -R ~/.config/nvim/dein_lazy.toml ~/dev/src/github.com/Shichisan/self_resources/settings/neovim/dein_lazy.toml'
-
-alias cptm 'cp -R ~/.tmux.conf ~/dev/src/github.com/Shichisan/self_resources/settings/tmux/tmux.conf'
