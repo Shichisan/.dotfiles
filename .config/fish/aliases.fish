@@ -48,6 +48,7 @@ alias cdp "cd $gp_source_path/prott"
 alias cdw "cd $gp_source_path/prott-webapp"
 alias cdt "cd $gp_source_path/prott-terraform"
 alias cdi "cd $gp_source_path/prott-infra"
+alias cdte "cd $gp_source_path/techbookfest_1"
 
 # Git
 alias g 'git'
@@ -139,3 +140,7 @@ function git_current_branch
   string replace 'refs/heads/' "" $ref
 end
 
+# cp alias
+alias cpnv 'mv ~/.config/nvim/* ~/dev/src/github.com/Shichisan/.dotfiles/.config/nvim/'
+alias cpf  'mv ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/.dotfiles/.config/fish/'
+alias cptm 'mv ~/.tmux.* ~/dev/src/github.com/Shichisan/.dotfiles/'
