@@ -20,12 +20,6 @@ depends = ['context_filetype.vim']
 repo = 'Shougo/context_filetype.vim'
 
 [[plugins]]
-repo = 'Shougo/neosnippet.vim'
-
-[[plugins]]
-repo = 'Shougo/neosnippet-snippets'
-
-[[plugins]]
 repo = 'w0rp/ale'
 
 [[plugins]]
@@ -56,10 +50,7 @@ repo = 'ctrlpvim/ctrlp.vim'
 repo = 'szw/vim-tags'
 
 [[plugins]]
-repo = 'Shougo/vimfiler.vim'
-
-[[plugins]]
-repo = 'Shougo/unite.vim'
+repo = 'scrooloose/nerdtree'
 
 [[plugins]]
 repo = 'wokalski/autocomplete-flow'

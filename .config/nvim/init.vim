@@ -134,7 +134,7 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap " ""<Left>
 inoremap ' ''<Left>
 nnoremap <Esc><Esc> :noh<CR>
-nnoremap <silent><C-e> :VimFiler -buffer-name=explorer -split -winwidth=65 -toggle -no-quit<Cr>
+nnoremap <silent><C-e> :NERDTreeToggle<Cr>
 nnoremap <silent><C-i> :Files<CR>
 nnoremap <silent><C-r> :Rg<CR>
 nnoremap <silent><C-c> :vsplit<CR><C-w><C-w>
