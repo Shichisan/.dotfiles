@@ -2,6 +2,7 @@
 alias n 'nvim'
 alias cdnv 'cd; and cd ~/.config/nvim'
 alias cdf 'cd; and cd ~/.config/fish'
+alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/.dotfiles/'
 
 # tmux関連
 alias t "tmux"
@@ -141,6 +142,12 @@ function git_current_branch
 end
 
 # cp alias
-alias cpnv 'mv ~/.config/nvim/* ~/dev/src/github.com/Shichisan/.dotfiles/.config/nvim/'
-alias cpf  'mv ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/.dotfiles/.config/fish/'
-alias cptm 'mv ~/.tmux.* ~/dev/src/github.com/Shichisan/.dotfiles/'
+alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/.dotfiles/.config/nvim/'
+alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/.dotfiles/.config/fish/'
+alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/.dotfiles/; and cp ~/.tmux.linux.conf ~/dev/src/github.com/Shichisan/.dotfiles/; and cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/.dotfiles/'
+
+# return dotfiles
+alias renv 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.config/nvim/* ~/.config/nvim/'
+alias ref 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.config/fish/*.fish ~/.config/fish/'
+alias retm 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.conf ~; and mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.linux.conf ~; and mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.osx.conf ~'
+
