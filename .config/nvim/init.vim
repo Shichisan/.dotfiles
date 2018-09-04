@@ -174,7 +174,6 @@ set fileencodings=utf-8,sjis
 set number
 set relativenumber
 set cursorline
-set cursorcolumn
 set laststatus=2
 set cmdheight=2
 highlight LineNr ctermfg=darkyellow
