@@ -120,7 +120,7 @@ let g:rehash256 = 1
 colorscheme lucius
 let g:lucius_contrast = 'low'
 let g:lucius_style = 'dark'
-let g:lucius_contrast_bg = 'low'
+let g:lucius_contrast_bg = 'high'
 
 " Key Bindings
 inoremap <silent> jj <ESC>

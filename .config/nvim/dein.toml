@@ -1,9 +1,12 @@
+# dein.vim
 [[plugins]]
 repo = 'Shougo/dein.vim'
 
+# colorscheme
 [[plugins]]
 repo = 'jonathanfilip/vim-lucius'
 
+# dein plugins
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
 on_i = 1
@@ -79,5 +82,5 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'moro/vim-review'
+repo = 'pearofducks/ansible-vim'
 
