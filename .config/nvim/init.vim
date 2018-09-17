@@ -152,11 +152,6 @@ endfunction
 
 inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<C-h>"
 
-" Golang Key Bindings
-map <C-n> :cnext<CR>
-map <C-m> :cpreviours<CR>
-nnoremap <leader>a :cclose<CR>
-
 " let sets
 let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
 let g:python_host_prog = $PYENV_ROOT . '/shims/python'
