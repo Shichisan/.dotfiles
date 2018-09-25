@@ -84,3 +84,5 @@ hook_add = '''
 [[plugins]]
 repo = 'pearofducks/ansible-vim'
 
+[[plugins]]
+repo = 'mattn/emmet-vim'

@@ -17,6 +17,10 @@ augroup MyAutoCmd
   autocmd FileType go command! -bang AV call go#alternate#Switch(<bang>0, 'vsplit')
   autocmd FileType go command! -bang AS call go#alternate#Switch(<bang>0, 'split')
   autocmd FileType go command! -bang AT call go#alternate#Switch(<bang>0, 'tabe')
+
+  " html
+  autocmd Filetype xml inoremap <buffer> </ </<C-x><C-o>
+  autocmd Filetype html inoremap <buffer> </ </<C-x><C-o>
 augroup END
 
 " dein settings {{{
@@ -73,6 +77,7 @@ let g:neosnippet#enable_completed_snippet = 1
 let g:ale_lint_on_text = 0
 let g:ale_linters = {
   \'javascript': ['prettier'],
+  \'ruby': ['rubocop'],
   \'python': ['autopep8', 'isort'],
   \'markdown': [
   \   {buffer, lines -> {'command': 'textlint -c ~/.config/textlintrc -o /dev/null --fix --no-color --quiet %t', 'read_temporary_file': 1}}
