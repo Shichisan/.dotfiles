@@ -85,6 +85,10 @@ let g:ale_linters = {
   \ }
 let g:ale_fix_on_save = 1
 
+" NERDTree settings
+" show invisible files as a default
+let g:indent_guides_guide_size=1
+
 " Golang Settings
 set autowrite
 let g:go_list_type = "quickfix"
@@ -116,9 +120,6 @@ let g:tigris#delay = 300
 let g:vim_tags_project_tags = "/usr/local/bin/ctags -f tags -R . 2>/dev/null"
 let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R -f Gemfile.lock.tags `bundle show --paths` 2>/dev/null"
 set tags+=.tags,Gemfile.lock.tags
-
-" vimfiler settings
-let g:vimfiler_as_default_explorer = 1
 
 " colorscheme
 let g:rehash256 = 1
@@ -157,6 +158,15 @@ endfunction
 
 inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<C-h>"
 
+" move end of screen last line when tap v twice
+vnoremap v $h
+nmap <Leader>c <Plug>(caw:i:toggle)
+vmap <Leader>c <Plug>(caw:i:toggle)
+
+" jump to corresponding pair when tap TAB
+nnoremap &lt;Tab&gt; %
+vnoremap &lt;Tab&gt; %
+
 " let sets
 let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
 let g:python_host_prog = $PYENV_ROOT . '/shims/python'
@@ -173,38 +183,50 @@ set fileencodings=utf-8,sjis
 " view
 set number
 set relativenumber
-set cursorline
-set laststatus=2
-set cmdheight=2
 highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set t_Co=256
 set encoding=utf-8
+set display=lastline
 
 " editor
-set showmatch
+set showmatch matchtime=1
 set ruler
 set termguicolors
 set list
 " setting for invisible character
 set listchars=tab:▸\ ,eol:↲,extends:❯,precedes:❮
-set showcmd
 set wildmenu
+" display as a longest list
+set wildmode=list:full
+" flap line
+set wrap
 set title
+set sm
+set ai
+set paste
 
 " cursor
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,]
 set scrolloff=8
 set sidescrolloff=16
+set ambiwidth=double
 
 " when file closing
 set confirm
 set hidden
 set autoread
 set nobackup
+" not generating swap file
 set noswapfile
+" delete backup after save file
+set nowritebackup
+" using OS clipboard
+set clipboard=unnamed
+" automatically reload
+set autoread
 
 " search / replace
 set incsearch
@@ -222,4 +244,14 @@ set expandtab
 set smarttab
 set autoindent
 set smartindent
+
+" error
+set noerrorbells
+set novisualbell
+set visualbell t_vb=
+
+" cmdline
+set cmdheight=2
+set laststatus=2
+set showcmd
 
