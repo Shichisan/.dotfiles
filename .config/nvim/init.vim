@@ -205,7 +205,6 @@ set wrap
 set title
 set sm
 set ai
-set paste
 
 " cursor
 set backspace=indent,eol,start
