@@ -4,19 +4,21 @@ set -x EDITOR nvim
 # tmux
 set -x TERM xterm-256color
 
-# rbenv
-set -x RBENV_ROOT $HOME/.rbenv
-set -gx PATH $RBENV_ROOT $PATH
-. (rbenv init - | psub)
+# anyenv
+set -g PATH $HOME/.anyenv/bin $PATH
+. (anyenv init - | psub)
 
-# pyenv
-set -x PYENV_ROOT $HOME/.pyenv
-set -x PATH $PYENV_ROOT $PATH
-. (pyenv init - | psub)
+set -l env_paths `ls $HOME/.anyenv/envs`
+for D in $env_paths
+  set -x PATH $HOME/.anyenv/$D/shims $PATH
+end
 
 # golang path
 set -x GOPATH $HOME/dev
 set -x PATH $PATH $GOPATH/bin
+
+# imagemacick path
+set -g fish_user_paths /usr/local/opt/imagemagick@6/bin $fish_user_paths
 
 # neovim python
 set -x NVIM_PYTHON_LOG_FILE /tmp/log
@@ -24,8 +26,5 @@ set -x NVIM_PYTHON_LOG_LEVEL DEBUG
 set -x NVIM_RUBY_LOG_FILE /tmp/log
 set -x NVIM_RUBY_LOG_LEVEL DEBUG
 
-# nodebrew settings
-set -x  PATH $HOME/.nodebrew/current/bin $PATH
+set -U fish_user_paths (echo $fish_user_paths | tr ' ' '\n' | sort -u)
 
-# mysql settings
-set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
