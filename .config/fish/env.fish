@@ -8,9 +8,8 @@ set -x TERM xterm-256color
 set -g PATH $HOME/.anyenv/bin $PATH
 . (anyenv init - | psub)
 
-set -l env_paths `ls $HOME/.anyenv/envs`
-for D in $env_paths
-  set -x PATH $HOME/.anyenv/$D/shims $PATH
+for D in goenv pyenv rbenv
+  set -x PATH $HOME/.anyenv/envs/$D/shims $PATH
 end
 
 # golang path
