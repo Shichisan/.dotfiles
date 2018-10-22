@@ -151,3 +151,6 @@ alias renv 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.config/nvim/* ~/.config
 alias ref 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.config/fish/*.fish ~/.config/fish/'
 alias retm 'mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.conf ~; and mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.linux.conf ~; and mv ~/dev/src/github.com/Shichisan/.dotfiles/.tmux.osx.conf ~'
 
+alias cpall 'cpnv; and cpf; and cptm'
+alias reall 'renv; and ref; and retm'
+
