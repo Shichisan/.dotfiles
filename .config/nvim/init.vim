@@ -72,4 +72,3 @@ endfunction
 call s:source_rc('general.rc.vim')
 call s:source_rc('plugin.rc.vim')
 call s:source_rc('keyBinding.rc.vim')
-

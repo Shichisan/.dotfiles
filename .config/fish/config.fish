@@ -14,4 +14,3 @@ end
 set fish_plugins theme peco
 set fish_theme idan
 
-set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
