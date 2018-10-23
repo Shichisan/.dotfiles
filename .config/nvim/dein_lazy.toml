@@ -88,6 +88,10 @@ repo = 'dag/vim-fish'
 on_ft = ['fish']
 
 [[plugins]]
-repo = 'moro/vim-review'
-on_ft = ['review']
+repo = 'mattn/emmet-vim'
+on_ft = ['html']
+
+# syntax highlighting for pug formaly jade
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
 

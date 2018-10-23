@@ -15,6 +15,7 @@ on_i = 1
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
+# change filetype when change context type
 [[plugins]]
 repo = 'osyo-manga/vim-precious'
 depends = ['context_filetype.vim']
@@ -22,6 +23,7 @@ depends = ['context_filetype.vim']
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
+# async code check
 [[plugins]]
 repo = 'w0rp/ale'
 
@@ -30,9 +32,6 @@ repo = 'Shougo/neco-syntax'
 
 [[plugins]]
 repo = 'ujihisa/neco-look'
-
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
@@ -84,5 +83,3 @@ hook_add = '''
 [[plugins]]
 repo = 'pearofducks/ansible-vim'
 
-[[plugins]]
-repo = 'mattn/emmet-vim'
