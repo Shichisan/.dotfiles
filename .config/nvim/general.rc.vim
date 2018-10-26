@@ -19,7 +19,6 @@ set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 
 " view
-set number
 set relativenumber
 highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}
@@ -30,7 +29,6 @@ set display=lastline
 
 " editor
 set showmatch matchtime=1
-set ruler
 set termguicolors
 set list
 " setting for invisible character
@@ -85,7 +83,6 @@ set smartindent
 " error
 set noerrorbells
 set novisualbell
-set visualbell t_vb=
 
 " cmdline
 set cmdheight=2

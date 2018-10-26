@@ -26,7 +26,7 @@ let g:ale_fix_on_save = 1
 
 " NERDTree settings
 " show invisible files as a default
-let g:indent_guides_guide_size=1
+let NERDTreeShowHidden=1
 
 " Golang Settings
 set autowrite
@@ -50,7 +50,6 @@ let g:go_play_open_browser = 1
 let g:go_play_open_browser_command = "chrome"
 
 " tigris settings
-let g:dein#plugin.build = './install.sh'
 let g:tigris#enabled = 1
 let g:tigris#on_the_fly_enabled = 1
 let g:tigris#delay = 300

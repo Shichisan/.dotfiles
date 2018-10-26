@@ -9,6 +9,8 @@ inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 inoremap " ""<Left>
 inoremap ' ''<Left>
+inoremap [ []<Left>
+inoremap [<Enter> []<Left><CR><ESC><S-o>
 nnoremap <Esc><Esc> :noh<CR>
 nnoremap <silent><C-e> :NERDTreeToggle<Cr>
 nnoremap <silent><C-i> :Files<CR>
