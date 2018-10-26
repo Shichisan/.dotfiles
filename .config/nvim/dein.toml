@@ -31,9 +31,6 @@ repo = 'w0rp/ale'
 repo = 'Shougo/neco-syntax'
 
 [[plugins]]
-repo = 'ujihisa/neco-look'
-
-[[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
@@ -53,17 +50,6 @@ repo = 'szw/vim-tags'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-
-[[plugins]]
-repo = 'wokalski/autocomplete-flow'
-
-[[plugins]]
-repo = 'zchee/deoplete-docker'
-
-[[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'bash install.sh'
 
 [[plugins]]
 repo = 'junegunn/fzf'

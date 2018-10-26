@@ -5,6 +5,9 @@ on_ft = ['toml']
 [[plugins]]
 repo = 'billyvg/tigris.nvim'
 on_ft = ['javascript', 'javascript.jsx']
+hook_post_update ='''
+  let g:dein#plugin.build = './install.sh'
+'''
 
 [[plugins]]
 repo = 'Shougo/neco-vim'
@@ -32,11 +35,6 @@ on_ft = ['javascript', 'javascript.jsx', 'coffee']
 on_i = 1
 
 [[plugins]]
-repo = 'billyvg/deoplete-import-js'
-on_ft = ['javascript', 'javascript.jsx', 'coffee']
-on_i = 1
-
-[[plugins]]
 repo = 'uplus/deoplete-solargraph'
 on_i = 1
 on_ft = ['ruby']
@@ -59,7 +57,11 @@ let g:deoplete#sources#omni#input_patterns = {
 
 [[plugins]]
 repo = 'ponko2/deoplete-fish'
+on_ft = ['fish']
 on_i = 1
+
+[[plugins]]
+repo = 'dag/vim-fish'
 on_ft = ['fish']
 
 [[plugins]]
@@ -67,25 +69,9 @@ repo = 'kchmck/vim-coffee-script'
 on_ft = ['coffee']
 
 [[plugins]]
-repo = 'alexgenco/neovim-ruby'
-on_ft = ['ruby']
-
-[[plugins]]
 repo = 'tpope/vim-endwise'
 on_i = 1
 on_ft = ['ruby']
-
-[[plugins]]
-repo = 'AndrewRadev/splitjoin.vim'
-on_ft = ['go']
-
-[[plugins]]
-repo = 'SirVer/ultisnips'
-on_ft = ['go']
-
-[[plugins]]
-repo = 'dag/vim-fish'
-on_ft = ['fish']
 
 [[plugins]]
 repo = 'mattn/emmet-vim'
@@ -94,4 +80,5 @@ on_ft = ['html']
 # syntax highlighting for pug formaly jade
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
+on_ft = ['jade']
 
