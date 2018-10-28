@@ -1,6 +1,6 @@
-. ~/.config/fish/env.fish
-. ~/.config/fish/aliases.fish
-. ~/.config/fish/Keybinds.fish
+source ~/.config/fish/env.fish
+source ~/.config/fish/aliases.fish
+source ~/.config/fish/Keybinds.fish
 
 function cd
   builtin cd $argv
@@ -14,4 +14,3 @@ end
 set fish_plugins theme peco
 set fish_theme idan
 
-set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
