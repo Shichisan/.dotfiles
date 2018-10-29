@@ -21,8 +21,12 @@ set -x NVIM_PYTHON_LOG_LEVEL DEBUG
 set -x NVIM_RUBY_LOG_FILE /tmp/log
 set -x NVIM_RUBY_LOG_LEVEL DEBUG
 
-# mysql settings
+# mysql path
 set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 
-# imagemagick
+# imagemagick path
 set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
+
+# nodebrew path
+set -x PATH $HOME/.nodebrew/current/bin $PATH
+
