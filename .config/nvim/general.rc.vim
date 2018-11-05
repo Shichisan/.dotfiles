@@ -19,7 +19,6 @@ set fileformats=unix,dos,mac
 set fileencodings=utf-8,sjis
 
 " view
-set number
 set relativenumber
 highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}

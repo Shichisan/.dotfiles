@@ -1,6 +1,6 @@
-. ~/.config/fish/env.fish
-. ~/.config/fish/aliases.fish
-. ~/.config/fish/Keybinds.fish
+source ~/.config/fish/env.fish
+source ~/.config/fish/aliases.fish
+source ~/.config/fish/Keybinds.fish
 
 function cd
   builtin cd $argv
