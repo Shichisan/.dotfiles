@@ -15,23 +15,12 @@ on_i = 1
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
-# change filetype when change context type
-[[plugins]]
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
-
-[[plugins]]
-repo = 'Shougo/context_filetype.vim'
-
 # async code check
 [[plugins]]
 repo = 'w0rp/ale'
 
 [[plugins]]
 repo = 'Shougo/neco-syntax'
-
-[[plugins]]
-repo = 'ujihisa/neco-look'
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
@@ -46,24 +35,10 @@ repo = 'osyo-manga/vim-anzu'
 repo = 'yuttie/comfortable-motion.vim'
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
-
-[[plugins]]
 repo = 'szw/vim-tags'
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
-
-[[plugins]]
-repo = 'wokalski/autocomplete-flow'
-
-[[plugins]]
-repo = 'zchee/deoplete-docker'
-
-[[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'bash install.sh'
 
 [[plugins]]
 repo = 'junegunn/fzf'
@@ -82,4 +57,8 @@ hook_add = '''
 
 [[plugins]]
 repo = 'pearofducks/ansible-vim'
+
+# syntax highlighting for pug formaly jade
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
 

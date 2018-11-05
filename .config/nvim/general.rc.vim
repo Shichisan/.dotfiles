@@ -30,7 +30,6 @@ set display=lastline
 
 " editor
 set showmatch matchtime=1
-set ruler
 set termguicolors
 set list
 " setting for invisible character
@@ -85,7 +84,6 @@ set smartindent
 " error
 set noerrorbells
 set novisualbell
-set visualbell t_vb=
 
 " cmdline
 set cmdheight=2
