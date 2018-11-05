@@ -63,10 +63,7 @@ on_i = 1
 [[plugins]]
 repo = 'dag/vim-fish'
 on_ft = ['fish']
-
-[[plugins]]
-repo = 'kchmck/vim-coffee-script'
-on_ft = ['coffee']
+on_i = 1
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
@@ -77,7 +74,6 @@ on_ft = ['ruby']
 repo = 'mattn/emmet-vim'
 on_ft = ['html']
 
-# syntax highlighting for pug formaly jade
 [[plugins]]
 repo = 'digitaltoad/vim-pug'
 on_ft = ['jade']

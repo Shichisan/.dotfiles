@@ -15,14 +15,6 @@ on_i = 1
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
-# change filetype when change context type
-[[plugins]]
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
-
-[[plugins]]
-repo = 'Shougo/context_filetype.vim'
-
 # async code check
 [[plugins]]
 repo = 'w0rp/ale'
@@ -41,9 +33,6 @@ repo = 'osyo-manga/vim-anzu'
 
 [[plugins]]
 repo = 'yuttie/comfortable-motion.vim'
-
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
 repo = 'szw/vim-tags'
@@ -68,4 +57,8 @@ hook_add = '''
 
 [[plugins]]
 repo = 'pearofducks/ansible-vim'
+
+# syntax highlighting for pug formaly jade
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
 
