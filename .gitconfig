@@ -2,35 +2,18 @@
 	email = taiga.shichisan@gmail.com
 	name = Shichisan
 
+[core]
+  editor = nvim
+  excludesfile = /Users/taigishii/.gitignore_global
+
 [color]
   ui = auto
-
-[alias]
-  amend = commit --amend -C HEAD
-  graph = log --graph --date=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
-  st = status
-  co = checkout
-  br = branch
-  cm = commit
-  pp = pull --prune
-  rb = rebase
-  rbi = rebase -i
-  cmend = commit --amend
-  pf = push -f
-  sm = submodule
-
-  # Untracked filesを表示せず、not stagedと、stagedだけの状態を出力する
-  stt = status -uno
-
-  # 行ごとの差分でなく、単語レベルの差分を表示する
-  difff = diff --word-diff
-  loog = log --oneline
 
 [push]
   default = current
 
-[core]
-  excludesfile = /Users/taigishii/.gitignore_global
+[pull]
+  rebase = preserve
 
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
@@ -38,9 +21,6 @@
 [mergetool "sourcetree"]
   cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
-
-[pull]
-  rebase = preserve
 
 [gui]
 	recentrepo = /Users/taigaishii/work/sarah-study
