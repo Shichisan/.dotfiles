@@ -28,11 +28,6 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-" vimprocだけ先にインストールをする
-if dein#check_install(['vimproc.vim'])
-  call dein#install(['vimproc.vim'])
-endif
-
 " 不足プラグインの自動インストール if dein#check_install()
 if dein#check_install()
   call dein#install()

@@ -1,9 +1,11 @@
 " colorscheme
-let g:rehash256 = 1
+filetype plugin indent on
+syntax enable
 colorscheme lucius
 let g:lucius_contrast = 'low'
 let g:lucius_style = 'dark'
 let g:lucius_contrast_bg = 'high'
+let g:rehash256 = 1
 
 " let sets
 let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
@@ -11,8 +13,6 @@ let g:python_host_prog = $PYENV_ROOT . '/shims/python'
 let mapleader = ','
 
 " global settings
-filetype plugin indent on
-syntax enable
 set background=dark
 filetype indent on
 set fileformats=unix,dos,mac
