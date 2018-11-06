@@ -3,14 +3,6 @@ inoremap <silent> jj <ESC>
 inoremap <silent> <C-j> j
 inoremap <silent> kk <ESC>
 inoremap <silent> <C-k> k
-inoremap { {}<Left>
-inoremap {<Enter> {}<Left><CR><ESC><S-o>
-inoremap ( ()<ESC>i
-inoremap (<Enter> ()<Left><CR><ESC><S-o>
-inoremap " ""<Left>
-inoremap ' ''<Left>
-inoremap [ []<Left>
-inoremap [<Enter> []<Left><CR><ESC><S-o>
 nnoremap <Esc><Esc> :noh<CR>
 nnoremap <silent><C-e> :NERDTreeToggle<Cr>
 nnoremap <silent><C-i> :Files<CR>
