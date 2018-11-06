@@ -1,49 +1,25 @@
-# dein.vim
 [[plugins]]
 repo = 'Shougo/dein.vim'
-
-# colorscheme
-[[plugins]]
-repo = 'jonathanfilip/vim-lucius'
-
-# dein plugins
-[[plugins]]
-repo = 'Shougo/deoplete.nvim'
-on_i = 1
 
 [[plugins]]
 repo = 'Shougo/vimproc.vim'
 build = 'make'
 
-# change filetype when change context type
 [[plugins]]
-repo = 'osyo-manga/vim-precious'
-depends = ['context_filetype.vim']
+repo = 'jonathanfilip/vim-lucius'
 
 [[plugins]]
-repo = 'Shougo/context_filetype.vim'
+repo = 'itchyny/lightline.vim'
 
 # async code check
 [[plugins]]
 repo = 'w0rp/ale'
 
 [[plugins]]
-repo = 'Shougo/neco-syntax'
-
-[[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
 repo = 'rhysd/accelerated-jk'
-
-[[plugins]]
-repo = 'osyo-manga/vim-anzu'
-
-[[plugins]]
-repo = 'yuttie/comfortable-motion.vim'
-
-[[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
 repo = 'szw/vim-tags'
@@ -65,7 +41,4 @@ hook_add = '''
     \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
     \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:50%:wrap'))
 '''
-
-[[plugins]]
-repo = 'pearofducks/ansible-vim'
 

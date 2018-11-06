@@ -1,72 +1,35 @@
-[[plugins]] # toml syntax
-repo = 'cespare/vim-toml'
-on_ft = ['toml']
-
 [[plugins]]
-repo = 'billyvg/tigris.nvim'
-on_ft = ['javascript', 'javascript.jsx']
-hook_post_update ='''
-  let g:dein#plugin.build = './install.sh'
+repo = 'Shougo/deoplete.nvim'
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+  " tab completion
 '''
-
-[[plugins]]
-repo = 'Shougo/neco-vim'
-on_ft = ['vim']
-
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = ['go']
+if = 'has("nvim")'
+on_i = 1
 
 [[plugins]]
 repo = 'zchee/deoplete-go'
 build = 'make'
-on_ft = ['go']
-on_i = 1
-
-[[plugins]]
-repo = 'carlitux/deoplete-ternjs'
-on_ft = ['javascript', 'javascript.jsx', 'coffee']
-on_i = 1
-
-[[plugins]]
-repo = 'Galooshi/vim-import-js'
-build = 'npm install -g import-js'
-on_ft = ['javascript', 'javascript.jsx', 'coffee']
-on_i = 1
-
-[[plugins]]
-repo = 'uplus/deoplete-solargraph'
-on_i = 1
-on_ft = ['ruby']
-
-[[plugins]]
-repo = 'fishbullet/deoplete-ruby'
-on_ft = ['ruby']
-on_i = 1
-
-[[plugins]]
-repo = 'osyo-manga/vim-monster'
-on_i = 1
-on_ft = ['ruby']
-hook_add = '''
-let g:monster#completion#rcodetools#backend = "async_rct_complete"
-let g:deoplete#sources#omni#input_patterns = {
-  \ "ruby" : '[^. *\t]\.\w*\|\h\w*::',
-  \}
+on_ft = 'go'
+depends = ['deoplete.nvim']
+hook_source = '''
+  let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
 '''
 
 [[plugins]]
-repo = 'ponko2/deoplete-fish'
-on_ft = ['fish']
+repo = 'fatih/vim-go'
+on_ft = 'go'
+hook_source = '''
+  let g:go_highlight_functions = 1
+  let g:go_highlight_methods = 1
+  let g:go_highlight_structs = 1
+  autocmd FileType go :highlight goErr cterm=bold ctermfg=214
+  autocmd FileType go :match goErr /<err/>/
+'''
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
 on_i = 1
-
-[[plugins]]
-repo = 'dag/vim-fish'
-on_ft = ['fish']
-
-[[plugins]]
-repo = 'kchmck/vim-coffee-script'
-on_ft = ['coffee']
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
@@ -74,11 +37,11 @@ on_i = 1
 on_ft = ['ruby']
 
 [[plugins]]
+repo = 'dag/vim-fish'
+on_ft = ['fish']
+on_i = 1
+
+[[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['html']
-
-# syntax highlighting for pug formaly jade
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
-on_ft = ['jade']
 

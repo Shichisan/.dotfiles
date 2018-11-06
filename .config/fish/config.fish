@@ -5,4 +5,3 @@ source ~/.config/fish/command.fish
 
 set fish_plugins theme peco
 set fish_theme idan
-
