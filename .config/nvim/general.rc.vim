@@ -1,10 +1,7 @@
 " colorscheme
 filetype plugin indent on
 syntax enable
-colorscheme lucius
-let g:lucius_contrast = 'low'
-let g:lucius_style = 'dark'
-let g:lucius_contrast_bg = 'high'
+colorscheme gruvbox
 let g:rehash256 = 1
 
 " let sets
