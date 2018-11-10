@@ -14,6 +14,13 @@ repo = 'itchyny/lightline.vim'
 # async code check
 [[plugins]]
 repo = 'w0rp/ale'
+on_source = ['lightline.vim']
+book_add = '''
+  let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '']
+  let g:ale_echo_msg_format = '[%linter%] %s'
+  nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+  nmap <silent> <C-j> <Plug>(ale_next_wrap)
+'''
 
 [[plugins]]
 repo = 'bronson/vim-trailing-whitespace'
