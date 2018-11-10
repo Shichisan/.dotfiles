@@ -2,7 +2,7 @@
 alias n 'nvim'
 alias cdnv 'cd; and cd ~/.config/nvim'
 alias cdf 'cd; and cd ~/.config/fish'
-alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/.dotfiles/'
+alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/dotfiles'
 
 # tmux関連
 alias t "tmux"
