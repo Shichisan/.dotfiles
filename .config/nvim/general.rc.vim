@@ -68,6 +68,7 @@ set ignorecase
 set smartcase
 set wrapscan
 set gdefault
+set history=100
 
 " tab / indent
 set tabstop=2
