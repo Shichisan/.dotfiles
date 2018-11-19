@@ -14,7 +14,8 @@ vnoremap " "zdi^V"<C-R>z^V"<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 inoremap <silent> <C-k> k
 nnoremap <Esc><Esc> :noh<CR>
-nnoremap <silent><C-e> :NERDTreeToggle<Cr>
+nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-i> :Files<CR>
 nnoremap <silent><C-r> :Rg<CR>
 nnoremap <silent><C-c> :vsplit<CR><C-w><C-w>
 nmap j <Plug>(accelerated_jk_gj)
