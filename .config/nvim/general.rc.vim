@@ -1,18 +1,20 @@
 " colorscheme
+filetype indent on
 filetype plugin indent on
 syntax enable
 colorscheme gruvbox
 let g:rehash256 = 1
+set t_Co=256
+set background=dark
+set fileformats=unix,dos,mac
 
 " let sets
 let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
 let g:python_host_prog = $PYENV_ROOT . '/shims/python'
 let mapleader = ','
 
-" global settings
-set background=dark
-filetype indent on
-set fileformats=unix,dos,mac
+" encoding
+set encoding=utf-8
 set fileencodings=utf-8,sjis
 
 " view
@@ -21,8 +23,6 @@ set relativenumber
 highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
-set t_Co=256
-set encoding=utf-8
 set display=lastline
 
 " editor

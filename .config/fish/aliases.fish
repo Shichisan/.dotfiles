@@ -1,10 +1,7 @@
-# vim関連
+# vim
 alias n 'nvim'
-alias cdnv 'cd; and cd ~/.config/nvim'
-alias cdf 'cd; and cd ~/.config/fish'
-alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/dotfiles'
 
-# tmux関連
+# tmux
 alias t "tmux"
 alias tl "tmux ls"
 alias tlc "tmux lsc"
@@ -13,43 +10,25 @@ alias tns "tmux new -s"
 alias tkss "tmux kill-session"
 alias tkse "tmux kill-server"
 
-# -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
-alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
-
-# tree
-alias tree "tree -NC" # N: 文字化け対策, C:色をつける
-
-# variables
-set -l source_path '~/dev/src/github.com'
-set -l self_source_path '~/dev/src/github.com/Shichisan'
-set -l gp_source_path '~/dev/src/github.com/goodpatch'
-
-# development
+# JavaScript
 alias ns 'npm start'
 alias gs "grunt server"
-alias gt 'grunt test'
-alias gtv 'grunt test -v'
-alias yt 'yarn test'
+
+# Ruby, Rails
 alias b "bundle exec"
 alias rs "bundle exec rails server"
 alias rc "bundle exec rails console"
 alias rcs 'bundle exec rails console --sandbox'
 alias brs 'bundle exec rspec'
 alias kiq "bundle exec sidekiq -C config/sidekiq.yml"
+alias cop "bundle exec rubocop -a"
 
-# development for prott
-alias cdsr "cd $self_source_path/self_resources"
-alias cds "cd $gp_source_path/prott-streaming"
-alias cdan "cd $gp_source_path/prott-ansible"
-alias cda "cd $gp_source_path/prott-api"
-alias cdb "cd $gp_source_path/prott-blog"
-alias cdc "cd $gp_source_path/prott-cms"
-alias cdl "cd $gp_source_path/prott-landing"
-alias cdp "cd $gp_source_path/prott"
-alias cdw "cd $gp_source_path/prott-webapp"
-alias cdt "cd $gp_source_path/prott-terraform"
-alias cdi "cd $gp_source_path/prott-infra"
-alias cdte "cd $gp_source_path/techbookfest_1"
+# Golang Development aliases
+alias gog 'go get'
+alias gogu 'go get -u'
+alias gob 'go build'
+alias gobo 'go build -o'
+alias gor 'go run'
 
 # Git
 alias g 'git'
@@ -121,16 +100,6 @@ alias grba 'git rebase --abort'
 alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
 
-alias gcmm 'git commit'
-alias gcmend 'git commit --amend'
-
-# Golang Development aliases
-alias gog 'go get'
-alias gogu 'go get -u'
-alias gob 'go build'
-alias gobo 'go build -o'
-alias gor 'go run'
-
 function git_current_branch
   set -l ref (git symbolic-ref --quiet HEAD 2> /dev/null)
   set -l ret $status
@@ -141,7 +110,35 @@ function git_current_branch
   string replace 'refs/heads/' "" $ref
 end
 
-# cp alias
+# -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
+alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
+
+# change directory
+
+# variables
+set -l source_path '~/dev/src/github.com'
+set -l self_source_path '~/dev/src/github.com/Shichisan'
+set -l gp_source_path '~/dev/src/github.com/goodpatch'
+
+# settings and config
+alias cdnv 'cd; and cd ~/.config/nvim'
+alias cdf 'cd; and cd ~/.config/fish'
+alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/dotfiles/'
+
+# Prott
+alias cdsr "cd $self_source_path/self_resources"
+alias cds "cd $gp_source_path/prott-streaming"
+alias cdan "cd $gp_source_path/prott-ansible"
+alias cda "cd $gp_source_path/prott-api"
+alias cdb "cd $gp_source_path/prott-blog"
+alias cdc "cd $gp_source_path/prott-cms"
+alias cdl "cd $gp_source_path/prott-landing"
+alias cdp "cd $gp_source_path/prott"
+alias cdw "cd $gp_source_path/prott-webapp"
+alias cdt "cd $gp_source_path/prott-terraform"
+alias cdi "cd $gp_source_path/prott-infra"
+
+# cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
 alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/'
 alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/dotfiles/; and cp ~/.tmux.linux.conf ~/dev/src/github.com/Shichisan/dotfiles/; and cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/dotfiles/'
