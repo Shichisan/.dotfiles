@@ -22,7 +22,7 @@ set -x NVIM_RUBY_LOG_FILE /tmp/log
 set -x NVIM_RUBY_LOG_LEVEL DEBUG
 
 # nodebrew path
-set -x PATH $HOME/.nodebrew/current/bin $PATH
+set -x PATH /usr/local/var/nodebrew/current/bin $PATH
 
 # mysql path
 set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
