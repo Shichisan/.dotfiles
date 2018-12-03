@@ -17,7 +17,8 @@ nnoremap <Esc><Esc> :noh<CR>
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 nnoremap <silent><C-i> :Files<CR>
 nnoremap <silent><C-r> :Rg<CR>
-nnoremap <silent><C-c> :vsplit<CR><C-w><C-w>
+nnoremap <silent><C-s> :vsplit<CR><C-w><C-w>
+nnoremap <silent><C-c> :split<CR><C-w><C-w>
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
 nmap n <Plug>(anzu-n-with-echo)
