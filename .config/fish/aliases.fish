@@ -12,7 +12,10 @@ alias tkse "tmux kill-server"
 
 # JavaScript
 alias ns 'npm start'
-alias gs "grunt server"
+alias ys 'yarn start'
+alias yl 'yarn lint'
+alias ylf 'yarn lint --fix'
+alias yt 'yarn test'
 
 # Ruby, Rails
 alias b "bundle exec"
