@@ -56,7 +56,11 @@ hook_post_update = '''
 '''
 
 [[plugins]]
-repo = 'mxw/vim-jsx'
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'javascript.jsx']
+
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
 on_ft = ['javascript', 'javascript.jsx']
 
 [[plugins]]
