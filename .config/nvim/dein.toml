@@ -26,9 +26,6 @@ book_add = '''
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
-repo = 'rhysd/accelerated-jk'
-
-[[plugins]]
 repo = 'szw/vim-tags'
 
 [[plugins]]

@@ -9,8 +9,3 @@ augroup MyAutoCmd
   autocmd FileType go nmap <Leader>i <Plug>(go-info)
   autocmd BufNewFile, BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2
 augroup END
-
-augroup ctags
-  autocmd!
-  autocmd BufWritePost * silent !ctags -R -f .tags
-augroup END

@@ -19,12 +19,6 @@ nnoremap <silent><C-i> :Files<CR>
 nnoremap <silent><C-r> :Rg<CR>
 nnoremap <silent><C-s> :vsplit<CR><C-w><C-w>
 nnoremap <silent><C-c> :split<CR><C-w><C-w>
-nmap j <Plug>(accelerated_jk_gj)
-nmap k <Plug>(accelerated_jk_gk)
-nmap n <Plug>(anzu-n-with-echo)
-nmap N <Plug>(anzu-N-with-echo)
-nmap * <Plug>(anzu-star-with-echo)
-nmap # <Plug>(anzu-sharp-with-echo)
 imap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : <SID>check_back_space() ? "\<TAB>" : deoplete#mappings#manual_complete()
 function! s:check_back_space() abort
     let col = col('.') - 1
