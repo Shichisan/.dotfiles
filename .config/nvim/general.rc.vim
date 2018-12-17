@@ -1,5 +1,4 @@
 " colorscheme
-filetype indent on
 filetype plugin indent on
 syntax enable
 colorscheme gruvbox
