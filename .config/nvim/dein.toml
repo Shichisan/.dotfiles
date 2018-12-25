@@ -46,3 +46,5 @@ hook_add = '''
     \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:50%:wrap'))
 '''
 
+[[plugins]]
+repo = 'tpope/vim-fugitive'
