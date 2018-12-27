@@ -103,6 +103,13 @@ alias grba 'git rebase --abort'
 alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
 
+# git checkout with fzf
+alias gf git_checkout_with_fzf
+
+function git_checkout_with_fzf
+  git branch -a | fzf | xargs git checkout
+end
+
 function git_current_branch
   set -l ref (git symbolic-ref --quiet HEAD 2> /dev/null)
   set -l ret $status
