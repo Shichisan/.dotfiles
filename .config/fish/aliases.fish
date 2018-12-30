@@ -45,7 +45,6 @@ alias gbd 'git branch -d'
 
 alias gc 'git commit -v'
 alias gc! 'git commit -v --amend'
-
 alias gcb 'git checkout -b'
 alias gcm 'git checkout master'
 alias gcd 'git checkout develop'
@@ -104,7 +103,7 @@ alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
 
 # git checkout with fzf
-alias gf git_checkout_with_fzf
+alias gbf git_checkout_with_fzf
 
 function git_checkout_with_fzf
   git branch -a | fzf | xargs git checkout
