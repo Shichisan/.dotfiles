@@ -129,12 +129,11 @@ set -l source_path '~/dev/src/github.com'
 set -l self_source_path '~/dev/src/github.com/Shichisan'
 set -l gp_source_path '~/dev/src/github.com/goodpatch'
 
-# settings and config
+# cd alias of personal
 alias cdnv 'cd; and cd ~/.config/nvim'
 alias cdf 'cd; and cd ~/.config/fish'
-alias cdot 'cd; and cd ~/dev/src/github.com/Shichisan/dotfiles/'
 
-# Prott
+# cd alias of Goodpatch
 alias cdsr "cd $self_source_path/self_resources"
 alias cds "cd $gp_source_path/prott-streaming"
 alias cdan "cd $gp_source_path/prott-ansible"
@@ -150,13 +149,13 @@ alias cdi "cd $gp_source_path/prott-infra"
 # cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
 alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/'
-alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/dotfiles/; and cp ~/.tmux.linux.conf ~/dev/src/github.com/Shichisan/dotfiles/; and cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/dotfiles/'
+alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/dotfiles/'
 alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 
 # return dotfiles
 alias renv 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
 alias ref 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
-alias retm 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~; and mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~; and mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
+alias retm 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
 alias regt 'mv ~/dev/src/github.com/Shichisan/dotfiles/.gitconfig ~'
 
 alias cpall 'cpnv; and cpf; and cptm; and cpgt'

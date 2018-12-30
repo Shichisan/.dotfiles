@@ -1,6 +1,3 @@
-# エディタ
-set -x EDITOR nvim
-
 # tmux
 set -x TERM xterm-256color
 

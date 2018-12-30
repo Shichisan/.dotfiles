@@ -2,12 +2,8 @@
 	email = taiga.shichisan@gmail.com
 	name = Shichisan
 
-[github]
-	user = Shichisan
-
 [core]
   editor = nvim
-  excludesfile = /Users/taigishii/.gitignore_global
 
 [color]
   ui = auto
@@ -17,13 +13,6 @@
 
 [pull]
   rebase = preserve
-
-[difftool "sourcetree"]
-  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-
-[mergetool "sourcetree"]
-  cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-  trustExitCode = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
