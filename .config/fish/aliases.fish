@@ -1,16 +1,12 @@
-# vim
-alias n 'nvim'
-
 # tmux
 alias t "tmux"
 alias tl "tmux ls"
-alias tlc "tmux lsc"
 alias ta "tmux a"
-alias tns "tmux new -s"
 alias tkss "tmux kill-session"
 alias tkse "tmux kill-server"
 
-# JavaScript
+# execute commands
+# npm, yarn
 alias ns 'npm start'
 alias ys 'yarn start'
 alias yl 'yarn lint'
@@ -21,9 +17,8 @@ alias yt 'yarn test'
 alias b "bundle exec"
 alias rs "bundle exec rails server"
 alias rc "bundle exec rails console"
-alias rcs 'bundle exec rails console --sandbox'
 alias brs 'bundle exec rspec'
-alias kiq "bundle exec sidekiq -C config/sidekiq.yml"
+alias sk "bundle exec sidekiq -C config/sidekiq.yml"
 alias cop "bundle exec rubocop -a"
 
 # Golang Development aliases
@@ -41,15 +36,16 @@ alias gaa 'git add --all'
 
 alias gb 'git branch'
 alias gba 'git branch -a'
-alias gbd 'git branch -d'
+alias gbd 'git branch -D'
+alias gbf git_checkout_with_fzf
 
 alias gc 'git commit -v'
 alias gc! 'git commit -v --amend'
+
+alias gco 'git checkout'
 alias gcb 'git checkout -b'
 alias gcm 'git checkout master'
 alias gcd 'git checkout develop'
-alias gcmsg 'git commit -m'
-alias gco 'git checkout'
 
 alias gcp 'git cherry-pick'
 alias gcpa 'git cherry-pick --abort'
@@ -88,6 +84,7 @@ alias grhh 'git reset HEAD --hard'
 
 alias gss 'git status -s'
 alias gst 'git status'
+
 alias gsta 'git stash save'
 alias gstaa 'git stash apply'
 alias gstc 'git stash clear'
@@ -101,9 +98,6 @@ alias grbc 'git rebase --continue'
 alias grba 'git rebase --abort'
 alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
-
-# git checkout with fzf
-alias gbf git_checkout_with_fzf
 
 function git_checkout_with_fzf
   git branch -a | fzf | xargs git checkout
