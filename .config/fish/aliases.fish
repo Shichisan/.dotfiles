@@ -12,7 +12,6 @@ alias ys 'yarn start'
 alias yl 'yarn lint'
 alias ylf 'yarn lint --fix'
 alias yt 'yarn test'
-
 # Ruby, Rails
 alias b "bundle exec"
 alias rs "bundle exec rails server"
@@ -127,18 +126,22 @@ set -l gp_source_path '~/dev/src/github.com/goodpatch'
 alias cdnv 'cd; and cd ~/.config/nvim'
 alias cdf 'cd; and cd ~/.config/fish'
 
-# cd alias of Goodpatch
-alias cdsr "cd $self_source_path/self_resources"
-alias cds "cd $gp_source_path/prott-streaming"
-alias cdan "cd $gp_source_path/prott-ansible"
-alias cda "cd $gp_source_path/prott-api"
-alias cdb "cd $gp_source_path/prott-blog"
-alias cdc "cd $gp_source_path/prott-cms"
-alias cdl "cd $gp_source_path/prott-landing"
-alias cdp "cd $gp_source_path/prott"
-alias cdw "cd $gp_source_path/prott-webapp"
-alias cdt "cd $gp_source_path/prott-terraform"
-alias cdi "cd $gp_source_path/prott-infra"
+# ghq
+alias ghg "ghq get"
+alias ghls "ghq list"
+alias ghl "ghq look"
+
+# change directory by ghq
+alias ghs "ghq look prott-streaming"
+alias ghan "ghq look prott-ansible"
+alias gha "ghq look prott-api"
+alias ghb "ghq look prott-blog"
+alias ghc "ghq look prott-cms"
+alias ghpl "ghq look prott-landing"
+alias ghp "ghq look prott"
+alias ghw "ghq look prott-webapp"
+alias ght "ghq look prott-terraform"
+alias ghi "ghq look prott-infra"
 
 # cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'

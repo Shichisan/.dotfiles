@@ -1,5 +1,5 @@
 # tmux
-set -x TERM xterm-256color
+set -x TERM screen-256color
 
 # anyenv path
 set -g PATH $HOME/.anyenv/bin $PATH
