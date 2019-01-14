@@ -147,14 +147,18 @@ alias ghi "ghq look prott-infra"
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
 alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/'
 alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/dotfiles/'
+alias cptmosx 'cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/dotfiles/'
+alias cptmlinux 'cp ~/.tmux.linux.conf ~/dev/src/github.com/Shichisan/dotfiles/'
 alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 
 # return dotfiles
 alias renv 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
 alias ref 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
 alias retm 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
+alias retmosx 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
+alias retmlinux 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
 alias regt 'mv ~/dev/src/github.com/Shichisan/dotfiles/.gitconfig ~'
 
-alias cpall 'cpnv; and cpf; and cptm; and cpgt'
-alias reall 'renv; and ref; and retm; and regt'
+alias cpall 'cpnv; and cpf; and cptm; and cptmosx; and cptmlinux; and cpgt'
+alias reall 'renv; and ref; and retm; and retmosx; and retmlinux; and regt'
 
