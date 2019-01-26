@@ -2,6 +2,7 @@
 alias t "tmux"
 alias tl "tmux ls"
 alias ta "tmux a"
+alias ts "tmux new -s"
 alias tkss "tmux kill-session"
 alias tkse "tmux kill-server"
 
@@ -99,7 +100,7 @@ alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
 
 function git_checkout_with_fzf
-  git branch -a | fzf | xargs git checkout
+  git branch -a | fzf --reverse --ansi | xargs git checkout
 end
 
 function git_current_branch
