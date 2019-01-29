@@ -12,6 +12,7 @@ alias ys 'yarn start'
 alias yl 'yarn lint'
 alias ylf 'yarn lint --fix'
 alias yt 'yarn test'
+
 # Ruby, Rails
 alias b "bundle exec"
 alias rs "bundle exec rails server"
@@ -121,19 +122,21 @@ alias ghl "ghq look"
 # cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
 alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/'
+alias cpfd 'cp ~/.config/fish/conf.d/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/conf.d/'
 alias cptm 'cp ~/.tmux.conf ~/dev/src/github.com/Shichisan/dotfiles/'
-alias cptmosx 'cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/dotfiles/'
 alias cptmlinux 'cp ~/.tmux.linux.conf ~/dev/src/github.com/Shichisan/dotfiles/'
+alias cptmosx 'cp ~/.tmux.osx.conf ~/dev/src/github.com/Shichisan/dotfiles/'
 alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 
 # return dotfiles
-alias renv 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
-alias ref 'mv ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
-alias retm 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
-alias retmosx 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
-alias retmlinux 'mv ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
-alias regt 'mv ~/dev/src/github.com/Shichisan/dotfiles/.gitconfig ~'
+alias renv 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
+alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/conf.d/'
+alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/fish/conf.d/* ~/.config/fish/conf.d/*.fish'
+alias retm 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
+alias retmlinux 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
+alias retmosx 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
+alias regt 'cp ~/dev/src/github.com/Shichisan/dotfiles/.gitconfig ~'
 
-alias cpall 'cpnv; and cpf; and cptm; and cptmosx; and cptmlinux; and cpgt'
-alias reall 'renv; and ref; and retm; and retmosx; and retmlinux; and regt'
+alias cpall 'cpnv; and cpf; and cpfd; and cptm; and cptmlinux; and cptmosx; and cpgt'
+alias reall 'renv; and ref; and refd; and retm; and cptmlinux; and cptmosx; and regt'
 
