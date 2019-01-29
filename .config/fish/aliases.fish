@@ -6,7 +6,6 @@ alias ts "tmux new -s"
 alias tkss "tmux kill-session"
 alias tkse "tmux kill-server"
 
-# execute commands
 # npm, yarn
 alias ns 'npm start'
 alias ys 'yarn start'
@@ -21,13 +20,6 @@ alias brs 'bundle exec rspec'
 alias sk "bundle exec sidekiq -C config/sidekiq.yml"
 alias cop "bundle exec rubocop -a"
 
-# Golang Development aliases
-alias gog 'go get'
-alias gogu 'go get -u'
-alias gob 'go build'
-alias gobo 'go build -o'
-alias gor 'go run'
-
 # Git
 alias g 'git'
 
@@ -37,7 +29,6 @@ alias gaa 'git add --all'
 alias gb 'git branch'
 alias gba 'git branch -a'
 alias gbd 'git branch -D'
-alias gbf git_checkout_with_fzf
 
 alias gc 'git commit -v'
 alias gc! 'git commit -v --amend'
@@ -99,10 +90,6 @@ alias grba 'git rebase --abort'
 alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
 
-function git_checkout_with_fzf
-  git branch -a | fzf --reverse --ansi | xargs git checkout
-end
-
 function git_current_branch
   set -l ref (git symbolic-ref --quiet HEAD 2> /dev/null)
   set -l ret $status
@@ -117,32 +104,19 @@ end
 alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
 
 # change directory
-
 # variables
 set -l source_path '~/dev/src/github.com'
 set -l self_source_path '~/dev/src/github.com/Shichisan'
 set -l gp_source_path '~/dev/src/github.com/goodpatch'
 
 # cd alias of personal
-alias cdnv 'cd; and cd ~/.config/nvim'
-alias cdf 'cd; and cd ~/.config/fish'
+alias cdnv 'cd ~/.config/nvim'
+alias cdf 'cd ~/.config/fish'
 
 # ghq
 alias ghg "ghq get"
 alias ghls "ghq list"
 alias ghl "ghq look"
-
-# change directory by ghq
-alias ghs "ghq look prott-streaming"
-alias ghan "ghq look prott-ansible"
-alias gha "ghq look prott-api"
-alias ghb "ghq look prott-blog"
-alias ghc "ghq look prott-cms"
-alias ghpl "ghq look prott-landing"
-alias ghp "ghq look prott"
-alias ghw "ghq look prott-webapp"
-alias ght "ghq look prott-terraform"
-alias ghi "ghq look prott-infra"
 
 # cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
