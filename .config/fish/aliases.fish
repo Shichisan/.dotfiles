@@ -130,8 +130,8 @@ alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 
 # return dotfiles
 alias renv 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
-alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/conf.d/'
-alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/fish/conf.d/* ~/.config/fish/conf.d/*.fish'
+alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
+alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/conf.d/* ~/.config/fish/conf.d/'
 alias retm 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
 alias retmlinux 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
 alias retmosx 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
