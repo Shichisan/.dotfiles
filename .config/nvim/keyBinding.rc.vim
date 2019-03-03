@@ -1,4 +1,3 @@
-" Key Bindings
 inoremap <silent> jj <ESC>
 inoremap <silent> <C-j> j
 inoremap <silent> kk <ESC>
@@ -31,8 +30,3 @@ inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<C-h>"
 vnoremap v $h
 nmap <Leader>c <Plug>(caw:i:toggle)
 vmap <Leader>c <Plug>(caw:i:toggle)
-
-" jump to corresponding pair when tap TAB
-nnoremap &lt;Tab&gt; %
-vnoremap &lt;Tab&gt; %
-
