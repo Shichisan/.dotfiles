@@ -1,10 +1,9 @@
 " colorscheme
 filetype plugin indent on
 syntax enable
-colorscheme gruvbox
+colorscheme turtles
 let g:rehash256 = 1
 set t_Co=256
-set background=dark
 set fileformats=unix,dos,mac
 
 " let sets

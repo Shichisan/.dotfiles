@@ -6,7 +6,7 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo = 'morhetz/gruvbox'
+repo = 'kadekillary/Turtles'
 
 [[plugins]]
 repo = 'itchyny/lightline.vim'
