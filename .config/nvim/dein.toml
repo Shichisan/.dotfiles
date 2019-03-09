@@ -2,28 +2,41 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'Shougo/vimproc.vim'
-build = 'make'
+repo = 'cocopon/iceberg.vim'
 
 [[plugins]]
-repo = 'kadekillary/Turtles'
+repo = 'vim-airline/vim-airline'
+depends = ['vim-airline/vim-airline-themes']
 
 [[plugins]]
-repo = 'itchyny/lightline.vim'
+repo = 'vim-airline/vim-airline-themes'
 
 # async code check
 [[plugins]]
 repo = 'w0rp/ale'
 on_source = ['lightline.vim']
 book_add = '''
-  let g:ale_statusline_format = ['⨉ %d', '⚠ %d', '']
-  let g:ale_echo_msg_format = '[%linter%] %s'
-  nmap <silent> <C-k> <Plug>(ale_previous_wrap)
-  nmap <silent> <C-j> <Plug>(ale_next_wrap)
+  let g:ale_linters = {
+  \   'python': ['flake8'],
+  \   'go': ['goimports', 'go vet', 'golint'],
+  \ }
+  let g:ale_fix_on_save = 1
+  let g:ale_echo_msg_error_str = 'E'
+  let g:ale_echo_msg_warning_str = 'W'
+  let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+  let g:ale_open_list = 1
+  let g:ale_lint_on_save = 1
+  let g:ale_lint_on_text_changed = 0
+  let g:ale_set_loclist = 0
+  let g:ale_set_quickfix = 0
 '''
 
 [[plugins]]
-repo = 'bronson/vim-trailing-whitespace'
+repo = 'Yggdroot/indentLine'
+hook_add = '''
+  let g:indentLine_char = '¦'
+  let g:indentLine_color_term = 236
+'''
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'

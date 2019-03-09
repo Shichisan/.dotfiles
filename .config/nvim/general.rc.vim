@@ -1,19 +1,9 @@
 " colorscheme
-filetype plugin indent on
-syntax enable
-colorscheme turtles
-let g:rehash256 = 1
-set t_Co=256
-set fileformats=unix,dos,mac
+colorscheme iceberg
 
-" let sets
-let g:python3_host_prog = $PYENV_ROOT . '/shims/python3'
-let g:python_host_prog = $PYENV_ROOT . '/shims/python'
-let mapleader = ','
-
-" encoding
-set encoding=utf-8
+" file settings
 set fileencodings=utf-8,sjis
+set fileformats=unix,dos,mac
 
 " view
 set number

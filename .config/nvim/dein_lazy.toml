@@ -1,24 +1,28 @@
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
-hook_source = '''
-  let g:deoplete#enable_at_startup = 1
-  " tab completion
-'''
 if = 'has("nvim")'
 on_i = 1
+hook_source = '''
+  let g:deoplete#enable_at_startup = 1
+'''
 
 [[plugins]]
 repo = 'zchee/deoplete-go'
 build = 'make'
 on_ft = 'go'
+on_i = 1
 depends = ['deoplete.nvim']
 hook_source = '''
   let g:deoplete#sources#go#gocode_binary = $GOPATH . '/bin/gocode'
+  let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']
 '''
 
 [[plugins]]
 repo = 'fatih/vim-go'
 on_ft = 'go'
+hook_add = '''
+  let g:go_fmt_command = "goimports"
+'''
 hook_source = '''
   let g:go_highlight_functions = 1
   let g:go_highlight_methods = 1
