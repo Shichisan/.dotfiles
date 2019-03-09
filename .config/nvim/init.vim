@@ -2,8 +2,6 @@ if &compatible
   set nocompatible
 endif
 
-" dein settings {{{
-" dein自体の自動インストール
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -14,9 +12,7 @@ if &runtimepath !~# '/dein.vim'
   execute 'set runtimepath^=' . fnamemodify(s:dein_repo_dir, ':p')
 endif
 
-" もし、未インストールものものがあったらインストール
 let &runtimepath = s:dein_repo_dir .",". &runtimepath
-" プラグイン読み込み＆キャッシュ作成
 let g:rc_dir = expand('~/.config/nvim')
 let s:toml_file = g:rc_dir . '/dein.toml'
 let s:toml_lazy_file = g:rc_dir . '/dein_lazy.toml'
@@ -28,13 +24,10 @@ if dein#load_state(s:dein_dir)
   call dein#save_state()
 endif
 
-" 不足プラグインの自動インストール if dein#check_install()
 if dein#check_install()
   call dein#install()
 endif
-" }}}
 
-" read other files
 function s:source_rc(rc_file_name)
   let rc_file = expand(g:rc_dir . '/' . a:rc_file_name)
   if filereadable(rc_file)
@@ -43,8 +36,10 @@ function s:source_rc(rc_file_name)
 endfunction
 
 " execute read other files
-call s:source_rc('augroup.rc.vim')
 call s:source_rc('general.rc.vim')
-call s:source_rc('keyBinding.rc.vim')
+call s:source_rc('keymap.rc.vim')
 call s:source_rc('plugin.rc.vim')
+call s:source_rc('base.rc.vim')
 
+syntax enable
+filetype plugin indent on
