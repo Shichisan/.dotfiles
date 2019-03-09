@@ -26,9 +26,6 @@ book_add = '''
 repo = 'bronson/vim-trailing-whitespace'
 
 [[plugins]]
-repo = 'szw/vim-tags'
-
-[[plugins]]
 repo = 'scrooloose/nerdtree'
 
 [[plugins]]
@@ -43,7 +40,7 @@ hook_add = '''
   command! -bang -nargs=* Rg
     \ call fzf#vim#grep(
     \   'rg --line-number --no-heading '.shellescape(<q-args>), 0,
-    \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:50%:wrap'))
+    \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:40%:wrap'))
 '''
 
 [[plugins]]
