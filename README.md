@@ -12,5 +12,8 @@ $ defaults read -g KeyRepeat
 ## terminal font
 `brew tap homebrew/cask-fonts && brew cask install font-source-code-pro`
 
-## vim colorschema
+## terminal colorschema
+Same vim colorschema [iceberg](https://github.com/Arc0re/Iceberg-iTerm2)
+
+## fish prompt
 Replace `fish_prompt.fish` of [coffeeandcode](https://github.com/oh-my-fish/theme-coffeeandcode)
