@@ -35,7 +35,6 @@ function s:source_rc(rc_file_name)
   endif
 endfunction
 
-" execute read other files
 call s:source_rc('general.rc.vim')
 call s:source_rc('keymap.rc.vim')
 call s:source_rc('plugin.rc.vim')
