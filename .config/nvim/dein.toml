@@ -39,7 +39,8 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'Shougo/defx.nvim'
+if = 'has("nvim")'
 
 [[plugins]]
 repo = 'junegunn/fzf'

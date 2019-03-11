@@ -13,7 +13,7 @@ vnoremap ( "zdi^V(<C-R>z)<ESC>
 vnoremap " "zdi^V"<C-R>z^V"<ESC>
 vnoremap ' "zdi'<C-R>z'<ESC>
 nnoremap <Esc><Esc> :noh<CR>
-nnoremap <silent><C-e> :NERDTreeToggle<CR>
+nnoremap <silent><C-e> :Defx -columns=icons:filename:type<CR>
 nnoremap <silent><C-i> :Files<CR>
 nnoremap <silent><C-r> :Rg<CR>
 nnoremap <silent><C-s> :vsplit<CR><C-w><C-w>
