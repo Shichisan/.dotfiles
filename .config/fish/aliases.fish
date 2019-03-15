@@ -3,11 +3,8 @@ alias t "tmux"
 alias tl "tmux ls"
 alias ta "tmux a"
 alias ts "tmux new -s"
-alias tkss "tmux kill-session"
-alias tkse "tmux kill-server"
 
 # npm, yarn
-alias ns 'npm start'
 alias ys 'yarn start'
 alias yl 'yarn lint'
 alias ylf 'yarn lint --fix'
@@ -20,6 +17,7 @@ alias rc "bundle exec rails console"
 alias brs 'bundle exec rspec'
 alias sk "bundle exec sidekiq -C config/sidekiq.yml"
 alias cop "bundle exec rubocop -a"
+alias copf "bundle exec rubocop"
 
 # Git
 alias g 'git'
@@ -130,8 +128,8 @@ alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 
 # return dotfiles
 alias renv 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
-alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
-alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/conf.d/* ~/.config/fish/conf.d/'
+alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/conf.d/'
+alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/fish/conf.d/* ~/.config/fish/conf.d/*.fish'
 alias retm 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
 alias retmlinux 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
 alias retmosx 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
