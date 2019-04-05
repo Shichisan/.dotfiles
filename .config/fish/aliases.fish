@@ -16,8 +16,8 @@ alias rs "bundle exec rails server"
 alias rc "bundle exec rails console"
 alias brs 'bundle exec rspec'
 alias sk "bundle exec sidekiq -C config/sidekiq.yml"
-alias cop "bundle exec rubocop -a"
-alias copf "bundle exec rubocop"
+alias cop "bundle exec rubocop"
+alias copf "bundle exec rubocop -a"
 
 # Git
 alias g 'git'
