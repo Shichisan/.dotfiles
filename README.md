@@ -15,6 +15,3 @@ or
 [Meslo M for powerline](https://github.com/powerline/fonts/blob/master/Meslo%20Slashed/Meslo%20LG%20M%20Regular%20for%20Powerline.ttf)
 ## terminal colorschema
 Same vim colorschema [iceberg](https://github.com/Arc0re/Iceberg-iTerm2)
-
-## fish prompt
-Replace `fish_prompt.fish` of [coffeeandcode](https://github.com/oh-my-fish/theme-coffeeandcode)
