@@ -10,3 +10,7 @@ nnoremap <silent><C-k> :Rg<CR>
 nnoremap <silent><C-e> :Defx<CR>
 " fzf
 nnoremap <silent><C-i> :Files<CR>
+" rubocop
+let g:vimrubocop_config = '~/dev/src/github.com/goodpatch/prott-api/.rubocop.yml'
+let g:vimrubocop_keymap = 0
+nmap <C-b> :RuboCop --auto-correct<CR>

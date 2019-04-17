@@ -5,17 +5,18 @@ repo = 'Shougo/dein.vim'
 repo = 'cocopon/iceberg.vim'
 
 [[plugins]]
+repo = 'joshdick/onedark.vim'
+
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 depends = ['vim-airline/vim-airline-themes']
 
 [[plugins]]
 repo = 'vim-airline/vim-airline-themes'
 
-# async code check
 [[plugins]]
 repo = 'w0rp/ale'
-on_source = ['lightline.vim']
-book_add = '''
+hook_add = '''
   let g:ale_linters = {
   \   'python': ['flake8'],
   \   'go': ['goimports', 'go vet', 'golint'],
@@ -30,6 +31,9 @@ book_add = '''
   let g:ale_set_loclist = 0
   let g:ale_set_quickfix = 0
 '''
+
+[[plugins]]
+repo = 'guns/xterm-color-table.vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
@@ -59,3 +63,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'

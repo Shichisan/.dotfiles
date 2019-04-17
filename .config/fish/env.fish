@@ -1,6 +1,5 @@
-# エディタ
-set -x EDITOR nvim
-
+# default editor
+set -U EDITOR nvim
 # tmux
 set -x TERM screen-256color
 

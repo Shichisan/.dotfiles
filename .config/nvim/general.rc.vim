@@ -1,5 +1,5 @@
 " colorscheme
-colorscheme iceberg
+colorscheme onedark
 
 " file settings
 set fileencodings=utf-8,sjis
