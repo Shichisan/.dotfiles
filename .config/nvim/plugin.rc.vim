@@ -9,7 +9,23 @@ nnoremap <silent><C-k> :Rg<CR>
 " defx.nvim
 nnoremap <silent><C-e> :Defx<CR>
 " fzf
-nnoremap <silent><C-i> :Files<CR>
+nnoremap <silent><C-i> :FZF --reverse<CR>
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
+" [Buffers] Jump to the existing window if possible
+let g:fzf_buffers_jump = 1
 " rubocop
 let g:vimrubocop_config = '~/dev/src/github.com/goodpatch/prott-api/.rubocop.yml'
 let g:vimrubocop_keymap = 0
