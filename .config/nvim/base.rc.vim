@@ -8,10 +8,6 @@ language message C
 filetype off
 filetype plugin indent off
 
-let g:python_host_prog = expand($PYENV_ROOT . '/shims/python2')
-let g:python3_host_prog = expand($PYENV_ROOT . '/shims/python')
-let g:ruby_host_prog = expand($RBENV_ROOT . '/shims/ruby')
-
 let g:mapleader = '\<Space>'
 let g:maplocalleader = ','
 

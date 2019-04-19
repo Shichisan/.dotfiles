@@ -35,6 +35,10 @@ function s:source_rc(rc_file_name)
   endif
 endfunction
 
+let g:python_host_prog = expand($PYENV_ROOT . '/shims/python2')
+let g:python3_host_prog = expand($PYENV_ROOT . '/shims/python')
+let g:ruby_host_prog = expand($RBENV_ROOT . '/shims/ruby')
+
 call s:source_rc('general.rc.vim')
 call s:source_rc('keymap.rc.vim')
 call s:source_rc('plugin.rc.vim')

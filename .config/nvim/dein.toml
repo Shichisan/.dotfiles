@@ -2,17 +2,14 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
-repo = 'cocopon/iceberg.vim'
+repo = 'joshdick/onedark.vim'
 
 [[plugins]]
-repo = 'joshdick/onedark.vim'
+repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 repo = 'vim-airline/vim-airline'
 depends = ['vim-airline/vim-airline-themes']
-
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
 
 [[plugins]]
 repo = 'w0rp/ale'
