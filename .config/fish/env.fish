@@ -19,3 +19,5 @@ for D in rbenv pyenv nodenv
 end
 set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
+# fzf settings
+set -x FZF_DEFAULT_COMMAND 'fd --type f'
