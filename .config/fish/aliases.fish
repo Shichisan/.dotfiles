@@ -42,8 +42,6 @@ alias gfo 'git fetch origin'
 alias gpl 'git pull --prune'
 alias gps 'git push'
 alias gpsf 'git push -f'
-alias ggpull 'git pull origin (git_current_branch)'
-alias ggpush 'git push origin (git_current_branch)'
 alias gl 'git pull'
 alias glpp 'git pull --prune'
 alias glgg 'git log --graph'
@@ -64,32 +62,13 @@ alias grbc 'git rebase --continue'
 alias grba 'git rebase --abort'
 alias grbs 'git rebase --skip'
 alias grbo 'git rebase origin/master'
-
-function git_current_branch
-  set -l ref (git symbolic-ref --quiet HEAD 2> /dev/null)
-  set -l ret $status
-  if [ $ret != 0 ]
-    [ $ret == 128 ]; and return  # no git repo.
-    set -l ref (git rev-parse --short HEAD 2> /dev/null); or return
-  end
-  string replace 'refs/heads/' "" $ref
-end
-
 # -n 行数表示, -I バイナリファイル無視, svn関係のファイルを無視
 alias grep "grep --color -n -I --exclude='*.svn-*' --exclude='entries' --exclude='*/cache/*'"
-
-# change directory
-# variables
-set -l source_path '~/dev/src/github.com'
-set -l self_source_path '~/dev/src/github.com/Shichisan'
-set -l gp_source_path '~/dev/src/github.com/goodpatch'
 # cd alias of personal
 alias cdnv 'cd ~/.config/nvim'
 alias cdf 'cd ~/.config/fish'
 # ghq
 alias ghg "ghq get"
-alias ghls "ghq list"
-alias ghl "ghq look"
 # cp each setting
 alias cpnv 'cp ~/.config/nvim/* ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/'
 alias cpf  'cp ~/.config/fish/*.fish ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/'
@@ -101,7 +80,7 @@ alias cpgt 'cp ~/.gitconfig ~/dev/src/github.com/Shichisan/dotfiles/'
 # return dotfiles
 alias renv 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/nvim/* ~/.config/nvim/'
 alias ref 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/*.fish ~/.config/fish/'
-alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/conf.d/* ~/.config/fish/conf.d/'
+alias refd 'cp ~/dev/src/github.com/Shichisan/dotfiles/.config/fish/conf.d/*.fish ~/.config/fish/conf.d/'
 alias retm 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.conf ~'
 alias retmlinux 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.linux.conf ~'
 alias retmosx 'cp ~/dev/src/github.com/Shichisan/dotfiles/.tmux.osx.conf ~'
