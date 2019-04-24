@@ -1,18 +1,21 @@
+[github]
+	user = Shichisan
+
 [user]
 	email = taiga.shichisan@gmail.com
 	name = Shichisan
 
 [core]
+  ignorecase = false
+  whitespace = cr-at-eol
   editor = nvim
+  pager = less -x4
 
 [color]
   ui = auto
 
 [push]
   default = current
-
-[pull]
-  rebase = preserve
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -21,4 +24,43 @@
 	required = true
 
 [ghq]
-	root = /Users/macintosh/dev/src
+	root = /Users/emp-mac-taiga/dev/src
+
+[commit]
+	template = /Users/emp-mac-taiga/.git.d/commit_template
+
+[ghi]
+	token = !security find-internet-password -a Shichisan -s github.com -l 'ghi token' -w
+
+[alias]
+  # short aliases
+  st = status
+  co = checkout
+  ci = commit
+  br = branch
+  df = diff
+  lg = log -p
+  me = config user.name
+
+  up = !git update
+  smash = !git ir
+
+  unstage = reset HEAD
+  undo-commit = reset --soft HEAD
+
+  # interactive rebase
+  ir = !sh -c 'git rebase -i origin/${1-master}' -
+
+  # log aliases
+  log-branch = log origin/master
+  blog = !git log-branch
+  mlog = !git log --committer=\"`git me`\"
+
+  # update current branch
+  update = !sh -c 'git fetch origin && git rebase -p origin/${1-master}' -
+
+  # creates a diff of current branch against supplied branch. usage: git export-branch [refbranch]
+  branch-name = !git for-each-ref --format='%(refname:short)' `git symbolic-ref HEAD`
+
+  # all commits that aren't merges on all branches
+  all = !git log --pretty=oneline --abbrev-commit --all --no-merges
