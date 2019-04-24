@@ -7,14 +7,10 @@ set NVIM_PYTHON_LOG_FILE /tmp/log
 set NVIM_PYTHON_LOG_LEVEL DEBUG
 set NVIM_RUBY_LOG_FILE /tmp/log
 set NVIM_RUBY_LOG_LEVEL DEBUG
-# mysql path
-set -x PATH /usr/local/opt/mysql@5.6/bin $PATH
-# imagemagick path
-set -x PATH /usr/local/opt/imagemagick@6/bin $PATH
 # anyenv paths
 set PATH $HOME/.anyenv/bin $PATH
 . (anyenv init - | psub)
-for D in rbenv pyenv nodenv
+for D in rbenv pyenv nodenv goenv
   set -x PATH $HOME/..anyenv/envs/$D/shims $PATH
 end
 set -x GOPATH $HOME/dev
