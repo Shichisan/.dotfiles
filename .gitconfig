@@ -49,19 +49,22 @@
 
   # creates a diff of current branch against supplied branch. usage: git export-branch [refbranch]
   branch-name = !git for-each-ref --format='%(refname:short)' `git symbolic-ref HEAD`
-  export-branch = !git format-patch --stdout $1 > ~/branches/`git branch-name`.diff
+  export-branch = !git format-patch --stdout $1 > ~/.git_containers/branches/`git branch-name`.diff
 
   # all commits that aren't merges on all branches
   all = !git log --pretty=oneline --abbrev-commit --all --no-merges
+
+# all commits today for only me
+	today = !git all --since='12am' --committer=\"`git me`\"
 
   # today's commits without formatting or paging
   today-text = !git --no-pager today --no-color
 
   # files different from master on current branch
-  fdm = !git diff origin/master...--name-status
+  fdm = !git diff origin/master... --name-status
 
   # last commit info in svn style
-  last = !git show --name-stauts
+  last = !git show --name-status
   last-files = !git last --pretty=format:""
 
   # last commit only certain type of modification
