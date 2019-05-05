@@ -30,3 +30,5 @@ let g:fzf_buffers_jump = 1
 let g:vimrubocop_config = '~/dev/src/github.com/goodpatch/prott-api/.rubocop.yml'
 let g:vimrubocop_keymap = 0
 nmap <C-b> :RuboCop --auto-correct<CR>
+" vim hanami
+let g:hanami_open_strategy = 'vsplit'
