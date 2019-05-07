@@ -29,6 +29,9 @@
   df = diff
   lg = log -p
   me = config user.name
+  l = pull
+  sh = push
+  reb = rebase
 
   up = !git update
   smash = !git ir
@@ -106,6 +109,18 @@
   # number fo non-merge commits
   peeps = !git log --pretty=format:"%Cblue%aN%Creset" --no-merges | sort | uniq -c | sort -rn
   mergers = !git log --pretty=format:"%Cblue%aN%Creset" --merges | sort | uniq -c | sort -rn
+
+  # rebase
+  rebi = rebase -i
+  rebc = rebase --continue
+  rebs = rebase --skip
+  reba = rebase --abort
+
+  # cherry-pick
+  ch = cherry-pick
+  chc = cherry-pick --continue
+  chs = cherry-pick --skip
+  cha = cherry-pick --abort
 
 [color]
   ui = auto
