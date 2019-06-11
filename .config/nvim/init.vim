@@ -16,6 +16,7 @@ let &runtimepath = s:dein_repo_dir .",". &runtimepath
 let g:rc_dir = expand('~/.config/nvim')
 let s:toml_file = g:rc_dir . '/dein.toml'
 let s:toml_lazy_file = g:rc_dir . '/dein_lazy.toml'
+
 if dein#load_state(s:dein_dir)
   call dein#begin(s:dein_dir)
   call dein#load_toml(s:toml_file, {'lazy': 0})
@@ -44,5 +45,5 @@ call s:source_rc('keymap.rc.vim')
 call s:source_rc('plugin.rc.vim')
 call s:source_rc('base.rc.vim')
 
-syntax enable
 filetype plugin indent on
+syntax enable

@@ -20,17 +20,16 @@ augroup MyColor
   autocmd VimEnter * nested colorscheme onedark
 augroup END
 
-" FIXME: Remove if you implement by golang
-" augroup MyAutoCmd
-"   autocmd!
-"   " Golang autocmd
-"   autocmd FileType go nmap <Leader>b <Plug>(go-build)
-"   autocmd FileType go nmap <Leader>r <Plug>(go-run)
-"   autocmd FileType go nmap <Leader>t <Plug>(go-test)
-"   autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
-"   autocmd FileType go nmap <Leader>i <Plug>(go-info)
-"   autocmd BufNewFile, BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2
-" augroup END
+augroup MyAutoCmd
+  autocmd!
+  " Golang autocmd
+  autocmd FileType go nmap <Leader>b <Plug>(go-build)
+  autocmd FileType go nmap <Leader>r <Plug>(go-run)
+  autocmd FileType go nmap <Leader>t <Plug>(go-test)
+  autocmd FileType go nmap <Leader>c <Plug>(go-coverage-toggle)
+  autocmd FileType go nmap <Leader>i <Plug>(go-info)
+  autocmd BufNewFile, BufRead *.go setlocal noexpandtab tabstop=2 shiftwidth=2
+augroup END
 
 augroup DeleteSpace
   autocmd!
@@ -43,7 +42,7 @@ augroup MyDefxCmd
 	  nnoremap <silent><buffer><expr> <CR> defx#do_action('open')
 	  " nnoremap <silent><buffer><expr> c defx#do_action('copy')
 	  nnoremap <silent><buffer><expr> m defx#do_action('move')
-	  nnoremap <silent><buffer><expr> p defx#do_action('paste')
+	  " nnoremap <silent><buffer><expr> p defx#do_action('paste')
 	  nnoremap <silent><buffer><expr> l defx#do_action('open')
 	  nnoremap <silent><buffer><expr> E defx#do_action('open', 'vsplit')
 	  nnoremap <silent><buffer><expr> P defx#do_action('open', 'pedit')

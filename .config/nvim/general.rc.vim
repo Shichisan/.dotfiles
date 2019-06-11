@@ -6,8 +6,8 @@ set fileencodings=utf-8,sjis
 set fileformats=unix,dos,mac
 
 " view
-set number
-set relativenumber
+set number " 行番号を表示
+set relativenumber " 現在位置からの相対番号を表示
 highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
@@ -40,13 +40,9 @@ set confirm
 set hidden
 set autoread
 set nobackup
-" not generating swap file
-set noswapfile
-" delete backup after save file
-set nowritebackup
-" using OS clipboard
-set clipboard=unnamed
-" automatically reload
+set noswapfile " not generating swap file
+set nowritebackup " delete backup after save file
+set clipboard=unnamed " using OS clipboard
 set autoread
 
 " search / replace
@@ -59,10 +55,10 @@ set gdefault
 set history=100
 
 " tab / indent
-set tabstop=2
+set tabstop=2 " タブを何文字の空白に変換するか
 set softtabstop=2
-set shiftwidth=2
-set expandtab
+set shiftwidth=2 " 自動インデント時に入力する空白の数
+set expandtab " タブ入力を空白に変換
 set smarttab
 set autoindent
 set smartindent

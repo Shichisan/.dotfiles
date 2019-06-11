@@ -4,6 +4,8 @@ if = 'has("nvim")'
 on_i = 1
 hook_source = '''
   let g:deoplete#enable_at_startup = 1
+  inoremap <expr><Tab> pumvisible() ? "\<DOWN>" : "\<Tab>"
+  inoremap <expr><S-Tab> pumvisible() ? "\<UP>" : "\<S-Tab>"
 '''
 
 [[plugins]]
@@ -32,11 +34,6 @@ hook_source = '''
 '''
 
 [[plugins]]
-repo = 'tpope/vim-endwise'
-on_i = 1
-on_ft = ['ruby']
-
-[[plugins]]
 repo = 'mattn/emmet-vim'
 on_ft = ['html']
 
@@ -46,10 +43,6 @@ on_ft = ['html']
 
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
-on_ft = ['ruby']
-
-[[plugins]]
-repo = 'ngmy/vim-rubocop'
 on_ft = ['ruby']
 
 [[plugins]]
