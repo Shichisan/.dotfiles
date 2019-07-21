@@ -9,6 +9,11 @@ hook_source = '''
 '''
 
 [[plugins]]
+repo = 'tbodt/deoplete-tabnine'
+on_event = ['InsertEnter']
+build = './install.sh'
+
+[[plugins]]
 repo = 'zchee/deoplete-go'
 build = 'make'
 on_ft = ['go']

@@ -17,3 +17,6 @@ set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
 # fzf settings
 set -x FZF_DEFAULT_COMMAND 'fd --type f'
+
+set -g fish_emoji_width 1
+set -g fish_ambiguous_width 1
