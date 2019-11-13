@@ -11,12 +11,10 @@ set NVIM_RUBY_LOG_LEVEL DEBUG
 set PATH $HOME/.anyenv/bin $PATH
 . (anyenv init - | psub)
 for D in rbenv pyenv nodenv goenv
-  set -x PATH $HOME/..anyenv/envs/$D/shims $PATH
+  set -x PATH $HOME/.anyenv/envs/$D/shims $PATH
 end
 set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
-# fzf settings
 set -x FZF_DEFAULT_COMMAND 'fd --type f'
+set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
-set -g fish_emoji_width 1
-set -g fish_ambiguous_width 1

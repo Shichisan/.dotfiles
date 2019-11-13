@@ -2,6 +2,8 @@
 alias t "tmux"
 alias ta "tmux a"
 alias ts "tmux new -s"
+# neovim
+alias n "nvim"
 # npm, yarn
 alias ns 'npm start'
 alias ys 'yarn start'
