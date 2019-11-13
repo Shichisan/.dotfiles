@@ -32,6 +32,7 @@
   l = pull
   sh = push
   reb = rebase
+  fe = fetch
 
   up = !git update
   smash = !git ir
