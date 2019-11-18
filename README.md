@@ -10,7 +10,7 @@ $ defaults read -g KeyRepeat
 ```
 
 ## terminal font
-`brew tap homebrew/cask-fonts && brew cask install font-meslo-lg`
+`brew tap homebrew/cask-fonts && brew cask install source-code-pro-for-powerline`
 
 ## terminal colorschema
 Same vim colorschema [onedark](https://github.com/anunez/one-dark-iterm)
