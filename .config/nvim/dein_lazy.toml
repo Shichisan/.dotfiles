@@ -36,7 +36,7 @@ hook_source = '''
 
 [[plugins]]
 repo = 'Shougo/defx.nvim'
-if = has('nvim')
+if = 'has("nvim")'
 
 [[plugins]]
 repo = 'jiangmiao/auto-pairs'

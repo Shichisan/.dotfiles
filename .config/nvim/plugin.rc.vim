@@ -23,10 +23,9 @@ let g:fzf_colors =
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 " lightline
-set laststatus=2
-let g:lightline = {
-  \ 'colorscheme': 'onedark',
-  \ }
 if !has('gui_running')
   set t_Co=256
 endif
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
