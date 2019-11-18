@@ -22,3 +22,10 @@ let g:fzf_colors =
   \ 'header':  ['fg', 'Comment'] }
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
+" lightline
+if !has('gui_running')
+  set t_Co=256
+endif
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
