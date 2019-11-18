@@ -2,6 +2,9 @@
 alias t "tmux"
 alias ta "tmux a"
 alias ts "tmux new -s"
+# docker
+alias d "docker"
+alias dc "docker-compose"
 # neovim
 alias n "nvim"
 # npm, yarn

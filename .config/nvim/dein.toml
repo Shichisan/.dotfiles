@@ -2,14 +2,11 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
 repo = 'joshdick/onedark.vim'
-
-[[plugins]]
-repo = 'vim-airline/vim-airline-themes'
-
-[[plugins]]
-repo = 'vim-airline/vim-airline'
-depends = ['vim-airline/vim-airline-themes']
 
 [[plugins]] repo = 'w0rp/ale'
 hook_add = '''
@@ -36,10 +33,6 @@ hook_add = '''
 '''
 
 [[plugins]]
-repo = 'Shougo/defx.nvim'
-if = 'has("nvim")'
-
-[[plugins]]
 repo = 'junegunn/fzf'
 build = './install --bin'
 merged = '0'
@@ -54,11 +47,3 @@ hook_add = '''
     \   fzf#vim#with_preview({'options': '--exact --reverse --delimiter : --nth 3..'}, 'right:40%:wrap'))
 '''
 
-[[plugins]]
-repo = 'tpope/vim-fugitive'
-
-[[plugins]]
-repo = 'Townk/vim-autoclose'
-
-[[plugins]]
-repo = 'tpope/vim-endwise'
