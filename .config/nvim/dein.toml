@@ -8,6 +8,9 @@ build = 'make'
 [[plugins]]
 repo = 'joshdick/onedark.vim'
 
+[[plugins]]
+repo = 'itchyny/lightline.vim'
+
 [[plugins]] repo = 'w0rp/ale'
 hook_add = '''
   let g:ale_linters = {
@@ -49,3 +52,6 @@ hook_add = '''
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+
+[[plugins]]
+repo = 'andymass/vim-matchup'

@@ -17,3 +17,6 @@ set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
 set -x FZF_DEFAULT_COMMAND 'fd --type f'
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
+# flutter
+set -x PATH $HOME/dev/src/flutter/bin $PATH
+
