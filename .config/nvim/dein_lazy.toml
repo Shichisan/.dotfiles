@@ -1,5 +1,6 @@
 [[plugins]]
 repo = 'Shougo/deoplete.nvim'
+do = ':UpdateRemotePlugins'
 hook_source = '''
   let g:deoplete#enable_at_startup = 1
   inoremap <expr><Tab> pumvisible() ? "\<DOWN>" : "\<Tab>"
@@ -11,12 +12,12 @@ on_i = 1
 [[plugins]]
 repo = 'tbodt/deoplete-tabnine'
 build = './install.sh'
-on_i = 1
+on_event = ['InsertEnter']
 
 [[plugins]]
 repo = 'zchee/deoplete-go'
 build = 'make'
-on_ft = 'go'
+on_ft = ['go']
 on_i = 1
 depends = ['deoplete.nvim']
 hook_source = '''
@@ -41,28 +42,68 @@ repo = 'Shougo/defx.nvim'
 if = 'has("nvim")'
 
 [[plugins]]
-repo = 'jiangmiao/auto-pairs'
-on_i = 1
-
-[[plugins]]
 repo = 'mattn/emmet-vim'
-on_ft = 'html'
+on_ft = ["html", "css", "scss", "javascript", "vue"]
 
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
-on_ft = 'ruby'
+on_ft = ['ruby']
 
 [[plugins]]
 repo = 'tpope/vim-rails'
-on_ft = 'ruby'
+on_ft = ['ruby']
 
 [[plugins]]
 repo = 'tpope/vim-endwise'
-on_ft = 'ruby'
+on_ft = ['ruby']
 
 [[plugins]]
 repo = 'cespare/vim-toml'
-on_ft = 'toml'
+on_ft = ['toml']
 
 [[plugins]]
-repo = 'ekalinin/Dockerfile.vim'
+repo = 'jiangmiao/auto-pairs'
+on_i = 1
+
+# JavaScript syntax and Highlighting
+[[plugins]]
+repo = 'MaxMEllon/vim-jsx-pretty'
+on_ft = ['javascript', 'jsx', 'tsx']
+hook_add = '''
+  let g:vim_jsx_pretty_highlight_close_tag = 1
+'''
+
+[[plugins]]
+repo = 'ianks/vim-tsx'
+on_ft = ['tsx']
+
+[[plugins]]
+repo = 'galooshi/vim-import-js'
+on_ft = ['javascript', 'jsx']
+
+# async check
+[[plugins]]
+repo = 'w0rp/ale'
+on_ft = ['vue', 'typescript', 'tsx', 'typescript', 'javascript', 'jsx', 'vim', 'go']
+
+# vue development
+[[plugins]]
+repo = 'posva/vim-vue'
+on_ft = ['vue']
+hook_add = '''
+  set iskeyword+=$
+  set iskeyword+=-
+'''
+
+[[plugins]]
+repo = 'iloginow/vim-stylus'
+on_ft = ['styl', 'vue']
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+on_ft = ['typescript', 'vue', 'cpp']
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+on_ft = ['typescript', 'vue', 'cpp']
+
