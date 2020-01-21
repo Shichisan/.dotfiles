@@ -36,6 +36,7 @@ hook_add = '''
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
+# % ナビゲーションの拡張
 [[plugins]]
 repo = 'andymass/vim-matchup'
 
@@ -44,3 +45,19 @@ repo = 'Lokaltog/vim-easymotion'
 
 [[plugins]]
 repo = 'ekalinin/Dockerfile.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+

@@ -45,3 +45,28 @@ let g:lightline.tab = {
 let g:loaded_matchit = 1
 " vue
 let g:vue_pre_processors = ['pug', 'scss']
+" vim-lsp
+function! s:on_lsp_buffer_enabled() abort
+  setlocal omnifunc=lsp#complete
+  setlocal signcolumn=yes
+  nmap <buffer> gd <plug>(lsp-definition)
+  nmap <buffer> <f2> <plug>(lsp-rename)
+endfunction
+
+augroup lsp_install
+  au!
+  " call s:on_lsp_buffer_enabled only for languages that has the server registered.
+  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
+augroup END
+
+let g:lsp_settings_servers_dir='/Users/macintosh/dev/src'
+
+set foldmethod=expr
+  \ foldexpr=lsp#ui#vim#folding#foldexpr()
+  \ foldtext=lsp#ui#vim#folding#foldtext()
+" If you would like to disable folding globally, you can add this to your configuration:
+" let g:lsp_fold_enabled = 0
+
+let g:lsp_diagnostics_enabled = 0
+let g:lsp_sign_enabled = 1
+let g:lsp_signs_error = {'text': '✗'}
