@@ -98,12 +98,3 @@ hook_add = '''
 [[plugins]]
 repo = 'iloginow/vim-stylus'
 on_ft = ['styl', 'vue']
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-on_ft = ['typescript', 'vue']
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-on_ft = ['typescript', 'vue']
-
