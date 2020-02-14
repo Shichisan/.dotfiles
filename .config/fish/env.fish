@@ -9,7 +9,7 @@ set NVIM_RUBY_LOG_FILE /tmp/log
 set NVIM_RUBY_LOG_LEVEL DEBUG
 # anyenv paths
 set PATH $HOME/.anyenv/bin $PATH
-. (anyenv init - | psub)
+source (anyenv init - | psub)
 for D in rbenv pyenv nodenv goenv
   set -x PATH $HOME/.anyenv/envs/$D/shims $PATH
 end
