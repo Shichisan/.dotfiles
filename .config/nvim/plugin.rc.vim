@@ -6,6 +6,7 @@ nnoremap <silent><C-k> :Rg<CR>
 nnoremap <silent><C-e> :Defx<CR>
 " fzf
 nnoremap <silent><C-i> :FZF --reverse<CR>
+nnoremap <silent><C-i> :FZF --reverse <CR>
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
   \ 'bg':      ['bg', 'Normal'],

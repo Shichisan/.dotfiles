@@ -44,3 +44,6 @@ repo = 'Lokaltog/vim-easymotion'
 
 [[plugins]]
 repo = 'ekalinin/Dockerfile.vim'
+
+[[plugins]]
+repo = 'easymotion/vim-easymotion'
