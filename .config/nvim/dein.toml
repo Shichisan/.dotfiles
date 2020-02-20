@@ -36,7 +36,6 @@ hook_add = '''
 [[plugins]]
 repo = 'tpope/vim-fugitive'
 
-# % ナビゲーションの拡張
 [[plugins]]
 repo = 'andymass/vim-matchup'
 
@@ -61,5 +60,6 @@ repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 
+# % ナビゲーションの拡張
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
