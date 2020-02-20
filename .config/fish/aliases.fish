@@ -1,5 +1,5 @@
 # tmux
-alias t "tmux"
+alias t "tmux -2"
 alias ta "tmux a"
 alias ts "tmux new -s"
 # docker

@@ -3,7 +3,7 @@
 ## Definition directory
 rootdir=$(dirname $(cd $(dirname $0) && pwd))
 sourcedir=$rootdir/dotfiles
-ignoredir=.git
+ignoredir='./.git|./itermcolors'
 
 create_missing_directory() {
   ## Make Directories
@@ -20,7 +20,7 @@ create_missing_directory() {
 }
 
 create_dotfiles_symlink() {
-  for src in $(find $sourcedir -name $ignoredir -prune -o -type f -print); do
+  for src in $(find $sourcedir -type d | egrep -v "^($ignoredir)"); do
     dotfile=$(echo $src | sed "s#$sourcedir#$HOME#")
     echo "Check $dotfile"
 
