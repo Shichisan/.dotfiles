@@ -15,7 +15,7 @@ for D in rbenv pyenv nodenv goenv
 end
 set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
-set -x FZF_DEFAULT_COMMAND 'rg --hidden -l -g ""'
+set -x FZF_DEFAULT_COMMAND 'rg --hidden -l ""'
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
 

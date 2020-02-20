@@ -8,11 +8,9 @@ language message C
 filetype off
 filetype plugin indent off
 
-let g:mapleader = '\<Space>'
-let g:maplocalleader = ','
+let g:mapleadeq = "\<Space>"
 
 nnoremap "\<Space>" <Nop>
-nnoremap ',' <Nop>
 
 set background=dark
 augroup MyColor
