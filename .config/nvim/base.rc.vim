@@ -8,7 +8,8 @@ language message C
 filetype off
 filetype plugin indent off
 
-let g:mapleadeq = "\<Space>"
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
 
 nnoremap "\<Space>" <Nop>
 
