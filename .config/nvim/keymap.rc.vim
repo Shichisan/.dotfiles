@@ -10,10 +10,11 @@ function! s:check_back_space() abort
     return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
 
+nnoremap g<C-a> ggVG<CR>
+
 " mapping leader
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>xa :xa<CR>
 nnoremap <Leader>qa :qa<CR>
-
