@@ -9,10 +9,10 @@ hook_source = '''
 if = 'has("nvim")'
 on_i = 1
 
-[[plugins]]
-repo = 'tbodt/deoplete-tabnine'
-build = './install.sh'
-on_event = ['InsertEnter']
+# [[plugins]]
+# repo = 'tbodt/deoplete-tabnine'
+# build = './install.sh'
+# on_event = ['InsertEnter']
 
 [[plugins]]
 repo = 'zchee/deoplete-go'
@@ -62,7 +62,7 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 [[plugins]]
-repo = 'jiangmiao/auto-pairs'
+repo = 'tpope/vim-surround'
 on_i = 1
 
 # JavaScript syntax and Highlighting
@@ -97,4 +97,4 @@ hook_add = '''
 
 [[plugins]]
 repo = 'iloginow/vim-stylus'
-on_ft = ['styl', 'vue']
+on_ft = ['style', 'vue']

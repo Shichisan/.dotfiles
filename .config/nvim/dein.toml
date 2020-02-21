@@ -60,6 +60,15 @@ repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 
+[[plugins]]
+repo = 'runoshun/tscompletejob'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-gocode.vim'
+
 # % ナビゲーションの拡張
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
