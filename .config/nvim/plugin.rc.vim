@@ -74,7 +74,7 @@ set foldmethod=expr
   \ foldexpr=lsp#ui#vim#folding#foldexpr()
   \ foldtext=lsp#ui#vim#folding#foldtext()
 " If you would like to disable folding globally, you can add this to your configuration:
-" let g:lsp_fold_enabled = 0
+let g:lsp_fold_enabled = 0
 
 let g:lsp_diagnostics_enabled = 0
 let g:lsp_sign_enabled = 1
@@ -87,6 +87,7 @@ let g:lsp_log_verbose = 1
 let g:lsp_log_file = expand('~/vim-lsp-debug.log')
 " for asyncomplete.vim log
 let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+set completeopt+=preview
 
 " JavaScript, Typescript
 if executable('typescript-language-server')
@@ -94,8 +95,11 @@ if executable('typescript-language-server')
     \ 'name': 'javascript support using typescript-language-server',
     \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
     \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'package.json'))},
-    \ 'whitelist': ['javascript', 'javascript.jsx'],
+    \ 'whitelist': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'],
     \ })
+  " vim-lsp keymaps
+  autocmd FileType typescript nnoremap <buffer><Leader>] :LspDefinition<CR>
+  autocmd FileType typescript nnoremap <buffer><Leader>h :LspHover<CR>
 endif
 
 " ruby
@@ -107,3 +111,20 @@ if executable('solargraph')
         \ 'whitelist': ['ruby'],
         \ })
   endif
+
+" Typescript autocomplete
+call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
+  \ 'name': 'tscompletejob',
+  \ 'whitelist': ['typescript'],
+  \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
+  \ }))
+
+" go autocomplete
+call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options({
+  \ 'name': 'gocode',
+  \ 'whitelist': ['go'],
+  \ 'completor': function('asyncomplete#sources#gocode#completor'),
+  \ 'config': {
+  \   'gocode_path': expand('~/go/1.13.8/bin/gocode')
+  \ },
+  \ }))
