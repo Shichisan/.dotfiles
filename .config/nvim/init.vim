@@ -41,9 +41,9 @@ let g:python3_host_prog = expand($PYENV_ROOT . '/shims/python')
 let g:ruby_host_prog = expand($RBENV_ROOT . '/shims/ruby')
 
 call s:source_rc('general.rc.vim')
-call s:source_rc('keymap.rc.vim')
-call s:source_rc('plugin.rc.vim')
 call s:source_rc('base.rc.vim')
+call s:source_rc('plugin.rc.vim')
+call s:source_rc('keymap.rc.vim')
 
 filetype plugin indent on
 syntax enable
