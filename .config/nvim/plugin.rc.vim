@@ -68,11 +68,7 @@ augroup lsp_install
   autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
-" If you have used private PC
-" let g:lsp_settings_servers_dir='/Users/macintosh/dev/src/vim-lsp'
-
-" If you have used company PC
-let g:lsp_settings_servers_dir='/Users/emp-mac-taiga/dev/src/vim-lsp'
+let g:lsp_settings_servers_dir = expand('~/dev/src/vim-lsp')
 
 set foldmethod=expr
   \ foldexpr=lsp#ui#vim#folding#foldexpr()
