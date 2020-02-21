@@ -8,6 +8,7 @@ set fileformats=unix,dos,mac
 " view
 set number " 行番号を表示
 set relativenumber " 現在位置からの相対番号を表示
+highlight LineNr ctermfg=darkyellow
 set statusline+=%{fugitive#statusline()}
 set statusline=%<%f\ %m%r%h%w%{'['.(&fenc!=''?&fenc:&enc).']['.&ff.']'}%=%l,%c%V%8P
 set display=lastline
