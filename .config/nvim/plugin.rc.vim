@@ -97,9 +97,6 @@ if executable('typescript-language-server')
     \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'package.json'))},
     \ 'whitelist': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'],
     \ })
-  " vim-lsp keymaps
-  autocmd FileType typescript nnoremap <buffer><Leader>] :LspDefinition<CR>
-  autocmd FileType typescript nnoremap <buffer><Leader>h :LspHover<CR>
 endif
 
 " ruby

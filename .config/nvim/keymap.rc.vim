@@ -18,3 +18,7 @@ nnoremap <Leader>x :x<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>xa :xa<CR>
 nnoremap <Leader>qa :qa<CR>
+
+" vim-lsp keymappings
+nnoremap <Leader>] :LspDefinition<CR>
+nnoremap <Leader>h :LspHover<CR>
