@@ -136,3 +136,8 @@ call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options
   \   'gocode_path': expand('~/go/1.13.8/bin/gocode')
   \ },
   \ }))
+
+" vim coffeescript
+au BufRead, BufNewFile, BufReadPre *.coffee set filetype=coffee
+" indent
+autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et

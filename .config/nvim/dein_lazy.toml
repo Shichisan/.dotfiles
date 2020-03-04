@@ -116,3 +116,11 @@ hook_add = '''
 [[plugins]]
 repo = 'iloginow/vim-stylus'
 on_ft = ['style', 'vue']
+
+[[plugins]]
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug', 'jade']
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+on_ft = ['coffee']
