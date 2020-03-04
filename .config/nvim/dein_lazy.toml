@@ -9,10 +9,10 @@ hook_source = '''
 if = 'has("nvim")'
 on_i = 1
 
-# [[plugins]]
-# repo = 'tbodt/deoplete-tabnine'
-# build = './install.sh'
-# on_event = ['InsertEnter']
+[[plugins]]
+repo = 'tbodt/deoplete-tabnine'
+build = './install.sh'
+on_event = ['InsertEnter']
 
 [[plugins]]
 repo = 'zchee/deoplete-go'
@@ -68,9 +68,27 @@ on_i = 1
 # JavaScript syntax and Highlighting
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = ['javascript', 'jsx', 'tsx']
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
 hook_add = '''
   let g:vim_jsx_pretty_highlight_close_tag = 1
+'''
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
+
+[[plugins]]
+repo = 'prettier/vim-prettier'
+do = 'yarn install'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+hook_add = '''
+  let g:prettier#autoformat = 0
+  let g:prettier#single_quote = 'true'
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 '''
 
 [[plugins]]

@@ -69,6 +69,9 @@ repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-gocode.vim'
 
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
 # % ナビゲーションの拡張
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
