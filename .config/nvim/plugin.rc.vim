@@ -48,6 +48,17 @@ let g:lightline.tab = {
       \ 'inactive': [ 'tabnum', 'filename', 'modified' ]
       \ }
 
+" defx appearance
+" call defx#custom#option('_', {
+"   \ 'winwidth': 30,
+"   \ 'split': 'vertical',
+"   \ 'direction': 'topleft',
+"   \ 'show_ignore_files': 0,
+"   \ 'buffer_name': 'defxplorer',
+"   \ 'toggle': 1,
+"   \ 'resume': 1,
+"   \ })
+
 " matchup
 let g:loaded_matchit = 1
 
@@ -84,9 +95,9 @@ let g:lsp_highlight_references_enabled = 1
 highlight lspReference ctermfg=red guifg=red ctermbg=green guibg=green
 " If you debugging vim-lsp remove comment out below settings
 let g:lsp_log_verbose = 1
-let g:lsp_log_file = expand('~/vim-lsp-debug.log')
+let g:lsp_log_file = expand('~/.vim-lsp-debug.log')
 " for asyncomplete.vim log
-let g:asyncomplete_log_file = expand('~/asyncomplete.log')
+let g:asyncomplete_log_file = expand('~/.asyncomplete.log')
 set completeopt+=preview
 
 " JavaScript, Typescript

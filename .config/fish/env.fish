@@ -3,10 +3,10 @@ set -U EDITOR nvim
 # tmux
 set -x TERM xterm-256color
 # neovim python
-set NVIM_PYTHON_LOG_FILE /tmp/log
-set NVIM_PYTHON_LOG_LEVEL DEBUG
-set NVIM_RUBY_LOG_FILE /tmp/log
-set NVIM_RUBY_LOG_LEVEL DEBUG
+set -x NVIM_PYTHON_LOG_FILE /tmp/log
+set -x NVIM_PYTHON_LOG_LEVEL DEBUG
+set -x NVIM_RUBY_LOG_FILE /tmp/log
+set -x NVIM_RUBY_LOG_LEVEL DEBUG
 # anyenv paths
 set PATH $HOME/.anyenv/bin $PATH
 source (anyenv init - | psub)
@@ -18,6 +18,7 @@ set -x PATH $GOPATH/bin $PATH
 set -x FZF_DEFAULT_COMMAND 'rg --hidden -l ""'
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
+# set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 
 # flutter
 set -x PATH $HOME/dev/src/flutter/bin $PATH
