@@ -21,4 +21,9 @@ nnoremap <Leader>qa :qa<CR>
 
 " vim-lsp keymappings
 nnoremap <Leader>] :LspDefinition<CR>
+nnoremap <Leader>p] :LspPeekDefinition<CR>
 nnoremap <Leader>h :LspHover<CR>
+nnoremap <Leader>re :LspRename<CR>
+nnoremap <Leader>st :LspStatus<CR>
+nnoremap <Leader>ref :LspReferences<CR>
+nnoremap <Leader>n :LspNextReference<CR>
