@@ -1,3 +1,7 @@
+# linux alias
+alias ll 'ls -l'
+alias la 'ls -al'
+
 # tmux
 alias t "tmux -2"
 alias ta "tmux a"
