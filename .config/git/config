@@ -12,10 +12,10 @@
 	required = true
 
 [ghq]
-	root = /Users/macintosh/dev/src
+	root = /Users/EMP-MAC-taiga/dev/src
 
 [commit]
-	template = /Users/macintosh/.git.d/commit_template
+	template = /Users/EMP-MAC-taiga/.git.d/commit_template
 
 [ghi]
 	token = !security find-internet-password -a Shichisan -s github.com -l 'ghi token' -w
@@ -137,3 +137,5 @@
 
 [help]
   autocorrect = 1
+[diff]
+	noprefix = true
