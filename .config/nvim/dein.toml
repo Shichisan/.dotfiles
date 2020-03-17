@@ -46,4 +46,28 @@ repo = 'Lokaltog/vim-easymotion'
 repo = 'ekalinin/Dockerfile.vim'
 
 [[plugins]]
-repo = 'easymotion/vim-easymotion'
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+[[plugins]]
+repo = 'mattn/vim-lsp-settings'
+
+[[plugins]]
+repo = 'runoshun/tscompletejob'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-gocode.vim'
+
+[[plugins]]
+repo = 'jiangmiao/auto-pairs'

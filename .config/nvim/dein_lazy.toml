@@ -61,16 +61,30 @@ on_ft = ['ruby']
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
-[[plugins]]
-repo = 'jiangmiao/auto-pairs'
-on_i = 1
-
 # JavaScript syntax and Highlighting
 [[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = ['javascript', 'jsx', 'tsx']
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
 hook_add = '''
   let g:vim_jsx_pretty_highlight_close_tag = 1
+'''
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
+
+[[plugins]]
+repo = 'prettier/vim-prettier'
+do = 'yarn install'
+on_ft = ['javascript', 'jsx', 'typescript', 'tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
+hook_add = '''
+  let g:prettier#autoformat = 0
+  let g:prettier#single_quote = 'true'
+  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
 '''
 
 [[plugins]]
@@ -84,26 +98,12 @@ on_ft = ['javascript', 'jsx']
 # async check
 [[plugins]]
 repo = 'w0rp/ale'
-on_ft = ['vue', 'typescript', 'tsx', 'typescript', 'javascript', 'jsx', 'vim']
-
-# vue development
-[[plugins]]
-repo = 'posva/vim-vue'
-on_ft = ['vue']
-hook_add = '''
-  set iskeyword+=$
-  set iskeyword+=-
-'''
+on_ft = ['typescript', 'tsx', 'typescript', 'javascript', 'jsx']
 
 [[plugins]]
-repo = 'iloginow/vim-stylus'
-on_ft = ['styl', 'vue']
+repo = 'digitaltoad/vim-pug'
+on_ft = ['pug', 'jade']
 
 [[plugins]]
-repo = 'prabirshrestha/asyncomplete.vim'
-on_ft = ['typescript', 'vue']
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-lsp.vim'
-on_ft = ['typescript', 'vue']
-
+repo = 'kchmck/vim-coffee-script'
+on_ft = ['coffee']
