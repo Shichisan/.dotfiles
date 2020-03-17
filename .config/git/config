@@ -129,7 +129,7 @@
 [core]
   ignorecase = false
   whitespace = cr-at-eol
-  editor = nvim
+	editor = nvim
   pager = less -x4
 
 [push]

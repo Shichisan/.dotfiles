@@ -28,6 +28,3 @@ set -x ENHANCD_FILTER fzf:peco
 
 # awscli
 set -x PATH $HOME/.local/bin $PATH
-
-# starship
-source (starship init fish | source)
