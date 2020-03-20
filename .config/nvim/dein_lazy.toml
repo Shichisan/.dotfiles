@@ -63,6 +63,10 @@ on_ft = ['toml']
 
 # JavaScript syntax and Highlighting
 [[plugins]]
+repo = 'mxw/vim-jsx'
+on_ft = ['javascript', 'jsx']
+
+[[plugins]]
 repo = 'MaxMEllon/vim-jsx-pretty'
 on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
 hook_add = '''
@@ -90,6 +94,10 @@ hook_add = '''
 [[plugins]]
 repo = 'ianks/vim-tsx'
 on_ft = ['tsx']
+
+[[plugins]]
+repo = 'alampros/vim-styled-jsx'
+on_ft = ['javascript', 'jsx']
 
 [[plugins]]
 repo = 'galooshi/vim-import-js'
