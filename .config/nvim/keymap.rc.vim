@@ -27,3 +27,5 @@ nnoremap <Leader>re :LspRename<CR>
 nnoremap <Leader>st :LspStatus<CR>
 nnoremap <Leader>ref :LspReferences<CR>
 nnoremap <Leader>n :LspNextReference<CR>
+nnoremap <Leader>t :LspTypeDefinition<CR>
+nnoremap <Leader>pt :LspPeekTypeDefinition<CR>
