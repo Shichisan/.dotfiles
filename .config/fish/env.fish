@@ -22,9 +22,6 @@ set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
 # flutter
 set -x PATH $HOME/dev/src/flutter/bin $PATH
 
-# enhancd
-set -x ENHANCD_FILTER fzf:peco
-
 # fzf
 set -x FZF_DEFAULT_COMMAND 'fd --type f'
 set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
