@@ -15,7 +15,6 @@ for D in rbenv pyenv nodenv goenv
 end
 set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
-set -x FZF_DEFAULT_COMMAND 'rg --hidden -l ""'
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
 # set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
@@ -26,8 +25,14 @@ set -x PATH $HOME/dev/src/flutter/bin $PATH
 # enhancd
 set -x ENHANCD_FILTER fzf:peco
 
+# fzf
+set -x FZF_DEFAULT_COMMAND 'fd --type f'
+set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+
 # awscli
 set -x PATH $HOME/.local/bin $PATH
 
 # starship
 starship init fish | source
+
+set -x STRAP_DEVELOPER_ENV orca-dev-taiga
