@@ -100,43 +100,6 @@ let g:lsp_log_file = expand('~/.vim-lsp-debug.log')
 let g:asyncomplete_log_file = expand('~/.asyncomplete.log')
 set completeopt+=preview
 
-" JavaScript, Typescript
-if executable('typescript-language-server')
-  au User lsp_setup call lsp#register_server({
-    \ 'name': 'javascript support using typescript-language-server',
-    \ 'cmd': {server_info->[&shell, &shellcmdflag, 'typescript-language-server --stdio']},
-    \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'package.json'))},
-    \ 'whitelist': ['javascript', 'javascript.jsx', 'typescript', 'typescript.tsx'],
-    \ })
-endif
-
-" ruby
-if executable('solargraph')
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'solargraph',
-        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'solargraph stdio']},
-        \ 'initialization_options': {"diagnostics": "true"},
-        \ 'whitelist': ['ruby'],
-        \ })
-  endif
-
-" Typescript autocomplete
-call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
-  \ 'name': 'tscompletejob',
-  \ 'whitelist': ['typescript'],
-  \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
-  \ }))
-
-" go autocomplete
-call asyncomplete#register_source(asyncomplete#sources#gocode#get_source_options({
-  \ 'name': 'gocode',
-  \ 'whitelist': ['go'],
-  \ 'completor': function('asyncomplete#sources#gocode#completor'),
-  \ 'config': {
-  \   'gocode_path': expand('~/go/1.13.8/bin/gocode')
-  \ },
-  \ }))
-
 " vim coffeescript
 au BufRead, BufNewFile, BufReadPre *.coffee set filetype=coffee
 " indent
