@@ -16,7 +16,7 @@ nnoremap "\<Space>" <Nop>
 set background=dark
 augroup MyColor
   autocmd!
-  autocmd VimEnter * nested colorscheme onedark
+  autocmd VimEnter * nested colorscheme iceberg
 augroup END
 
 augroup MyAutoCmd
