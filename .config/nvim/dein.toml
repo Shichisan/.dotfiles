@@ -9,6 +9,9 @@ build = 'make'
 repo = 'joshdick/onedark.vim'
 
 [[plugins]]
+repo = 'cocopon/iceberg.vim'
+
+[[plugins]]
 repo = 'itchyny/lightline.vim'
 
 [[plugins]]
