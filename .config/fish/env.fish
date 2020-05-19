@@ -33,4 +33,8 @@ set -x PATH $HOME/.local/bin $PATH
 # starship
 starship init fish | source
 
+# strap env
 set -x STRAP_DEVELOPER_ENV orca-dev-taiga
+
+# postgresql
+set -x PGDATA '/usr/local/var/postgres'

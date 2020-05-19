@@ -34,13 +34,13 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'jiangmiao/auto-pairs'
+
+[[plugins]]
 repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'andymass/vim-matchup'
-
-[[plugins]]
-repo = 'Lokaltog/vim-easymotion'
 
 [[plugins]]
 repo = 'ekalinin/Dockerfile.vim'
@@ -69,5 +69,3 @@ repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-gocode.vim'
 
-[[plugins]]
-repo = 'jiangmiao/auto-pairs'
