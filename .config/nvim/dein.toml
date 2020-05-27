@@ -72,3 +72,8 @@ repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-gocode.vim'
 
+[[plugins]]
+repo = 'skanehira/translate.vim'
+
+[[plugins]]
+repo = 'simeji/winresizer'

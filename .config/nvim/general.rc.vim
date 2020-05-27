@@ -1,6 +1,10 @@
 " colorscheme
 colorscheme iceberg
 
+" 文字化けを防ぐためにいくつかの文字コードの設定を行う
+set encoding=uft-8
+scriptencoding utf-8
+
 " file settings
 set fileencodings=utf-8,sjis
 set fileformats=unix,dos,mac
@@ -19,6 +23,7 @@ set termguicolors
 set list
 " setting for invisible character
 set listchars=tab:▸\ ,eol:↲,extends:❯,precedes:❮
+" コマンドライン補完
 set wildmenu
 " display as a longest list
 set wildmode=list:full
@@ -28,7 +33,12 @@ set title
 set sm
 set ai
 
+" tab
+" タブを常に表示
+set showtabline=2
+
 " cursor
+set cursorline
 set backspace=indent,eol,start
 set whichwrap=b,s,h,l,<,>,[,]
 set scrolloff=8
@@ -46,22 +56,27 @@ set clipboard=unnamed " using OS clipboard
 set autoread
 
 " search / replace
+" 文字入力をするたびに、その時点でパターンマッチしたテキストをハイライト
 set incsearch
+" 検索結果をハイライト表示
 set hlsearch
+" 検索時大文字小文字を区別しない
 set ignorecase
+" 検索時、大文字入力をした場合大文字小文字を区別する
 set smartcase
 set wrapscan
 set gdefault
 set history=100
 
 " tab / indent
-set tabstop=2 " タブを何文字の空白に変換するか
+set tabstop=2 " タブを何文字のスペースに変換するか
 set softtabstop=2
-set shiftwidth=2 " 自動インデント時に入力する空白の数
-set expandtab " タブ入力を空白に変換
+set expandtab " タブ入力をスペースに変換
 set smarttab
 set autoindent
+" インデントを考慮して改行
 set smartindent
+set shiftwidth=2 " 自動インデント時に入力する空白の数
 
 " error
 set noerrorbells
@@ -69,6 +84,10 @@ set novisualbell
 
 " cmdline
 set cmdheight=2
+" ステータスラインを表示
 set laststatus=2
 set showcmd
 
+" 矩形選択
+" テキストではないところも選択可能にする
+set virtualedit=block
