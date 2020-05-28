@@ -1,3 +1,8 @@
+let mapleader = "\<Space>"
+let g:mapleader = "\<Space>"
+
+nnoremap "\<Space>" <Nop>
+
 inoremap <silent> jj <ESC>
 inoremap <silent> <C-j> j
 inoremap <silent> kk <ESC>

@@ -8,10 +8,14 @@ language message C
 filetype off
 filetype plugin indent off
 
-let mapleader = "\<Space>"
-let g:mapleader = "\<Space>"
+set helplang=ja
 
-nnoremap "\<Space>" <Nop>
+" undo永続化
+if has('persistent_undo')
+  let undo_path = expand('~/.config/nvim/undo')
+  exe 'set undodir=' . undo_path
+  set undofile
+endif
 
 set background=dark
 augroup MyColor

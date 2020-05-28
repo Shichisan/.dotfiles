@@ -74,3 +74,9 @@ repo = 'prabirshrestha/asyncomplete-gocode.vim'
 
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'skanehira/translate.vim'
+
+[[plugins]]
+repo = 'simeji/winresizer'

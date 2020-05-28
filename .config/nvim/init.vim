@@ -45,6 +45,5 @@ call s:source_rc('base.rc.vim')
 call s:source_rc('plugin.rc.vim')
 call s:source_rc('keymap.rc.vim')
 
-filetype plugin indent on
 syntax enable
-
+filetype plugin indent on
