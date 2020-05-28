@@ -72,3 +72,5 @@ repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete-gocode.vim'
 
+[[plugins]]
+repo = 'easymotion/vim-easymotion'

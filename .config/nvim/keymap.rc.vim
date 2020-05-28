@@ -12,6 +12,10 @@ endfunction
 
 nnoremap g<C-a> ggVG<CR>
 
+" easymotion
+nmap <Leader>s <Plug>(easymotion-s2)
+xmap <Leader>s <Plug>(easymotion-s2)
+
 " mapping leader
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>

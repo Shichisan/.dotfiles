@@ -47,3 +47,4 @@ call s:source_rc('keymap.rc.vim')
 
 filetype plugin indent on
 syntax enable
+
