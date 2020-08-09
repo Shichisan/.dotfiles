@@ -2,7 +2,6 @@
 colorscheme iceberg
 
 " 文字化けを防ぐためにいくつかの文字コードの設定を行う
-set encoding=uft-8
 scriptencoding utf-8
 
 " file settings
