@@ -14,6 +14,8 @@ alias n "nvim"
 # npm, yarn
 alias ns 'npm start'
 alias ys 'yarn start'
+alias ysd 'yarn start:developer'
+alias ydd 'yarn deploy:developer'
 alias yl 'yarn lint'
 alias ylf 'yarn lint --fix'
 alias yt 'yarn test'
