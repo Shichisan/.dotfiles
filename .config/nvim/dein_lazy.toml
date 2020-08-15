@@ -88,10 +88,3 @@ on_ft = ['javascript', 'jsx']
 repo = 'w0rp/ale'
 on_ft = ['typescript', 'tsx', 'typescript', 'javascript', 'jsx']
 
-[[plugins]]
-repo = 'digitaltoad/vim-pug'
-on_ft = ['pug', 'jade']
-
-[[plugins]]
-repo = 'kchmck/vim-coffee-script'
-on_ft = ['coffee']
