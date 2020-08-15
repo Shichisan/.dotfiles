@@ -7,7 +7,7 @@ ignoredir='./.git|./itermcolors'
 
 create_missing_directory() {
   ## Make Directories
-  for dir in $(find $sourcedir -type d | egrep -v "^($ignoredir)"); do
+  for dir in $(find $sourcedir -type d | egrep -v "($ignoredir)"); do
     dir=$(echo $dir | sed "s#^$sourcedir#$HOME#")
     echo "Check $dir"
     if [[ -d $dir ]]; then
@@ -20,8 +20,9 @@ create_missing_directory() {
 }
 
 create_dotfiles_symlink() {
-  for src in $(find $sourcedir -type f | egrep -v "^($ignoredir)"); do
+  for src in $(find $sourcedir -type f | egrep -v "($ignoredir)"); do
     dotfile=$(echo $src | sed "s#$sourcedir#$HOME#")
+    echo "hogehoge: $src"
     echo "Check $dotfile"
 
     if [[ -L $dotfile ]]; then
@@ -31,7 +32,7 @@ create_dotfiles_symlink() {
 
     if [[ ! -e $dotfile ]] && [[ $dotfile != 'README.md' ]] && [[ $dotfile != 'deploy.sh' ]]; then
       echo "Make symlink $src"
-      ln -s $src $dotfile
+      # ln -s $src $dotfile
     fi
   done
 }
