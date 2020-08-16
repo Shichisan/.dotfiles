@@ -21,6 +21,7 @@ for D in rbenv pyenv nodenv goenv
 end
 set -x GOPATH $HOME/dev
 set -x PATH $GOPATH/bin $PATH
+set -x GOENV_DISABLE_GOPATH 1
 
 set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
