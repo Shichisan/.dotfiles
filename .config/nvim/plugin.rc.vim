@@ -28,42 +28,8 @@ let g:fzf_colors =
 " [Buffers] Jump to the existing window if possible
 let g:fzf_buffers_jump = 1
 
-" lightline
-if !has('gui_running')
-  set t_Co=256
-endif
-
-let g:lightline = {
-      \ 'colorscheme': 'onedark',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'filename' ] ]
-      \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '|', 'right': '|' }
-      \ }
-
-let g:lightline.tab = {
-      \ 'active': [ 'tabnum', 'filename', 'modified' ],
-      \ 'inactive': [ 'tabnum', 'filename', 'modified' ]
-      \ }
-
-" defx appearance
-" call defx#custom#option('_', {
-"   \ 'winwidth': 30,
-"   \ 'split': 'vertical',
-"   \ 'direction': 'topleft',
-"   \ 'show_ignore_files': 0,
-"   \ 'buffer_name': 'defxplorer',
-"   \ 'toggle': 1,
-"   \ 'resume': 1,
-"   \ })
-
 " matchup
 let g:loaded_matchit = 1
-
-" vue
-let g:vue_pre_processors = ['pug', 'scss']
 
 " vim-lsp
 function! s:on_lsp_buffer_enabled() abort
@@ -107,3 +73,4 @@ autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 
 " winresizer
 let g:winresizer_start_key = "<C-Y>"
+
