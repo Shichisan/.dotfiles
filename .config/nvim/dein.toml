@@ -6,13 +6,7 @@ repo = 'Shougo/vimproc.vim'
 build = 'make'
 
 [[plugins]]
-repo = 'joshdick/onedark.vim'
-
-[[plugins]]
 repo = 'cocopon/iceberg.vim'
-
-[[plugins]]
-repo = 'itchyny/lightline.vim'
 
 [[plugins]]
 repo = 'Yggdroot/indentLine'
@@ -46,9 +40,6 @@ repo = 'tpope/vim-fugitive'
 repo = 'andymass/vim-matchup'
 
 [[plugins]]
-repo = 'ekalinin/Dockerfile.vim'
-
-[[plugins]]
 repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
@@ -64,16 +55,9 @@ repo = 'prabirshrestha/vim-lsp'
 repo = 'mattn/vim-lsp-settings'
 
 [[plugins]]
-repo = 'runoshun/tscompletejob'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-tscompletejob.vim'
-
-[[plugins]]
-repo = 'prabirshrestha/asyncomplete-gocode.vim'
-
-[[plugins]]
-repo = 'easymotion/vim-easymotion'
-
-[[plugins]]
 repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'skanehira/code2img.vim'
+
+[[plugins]]

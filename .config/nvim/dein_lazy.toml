@@ -1,33 +1,6 @@
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
-do = ':UpdateRemotePlugins'
-hook_source = '''
-  let g:deoplete#enable_at_startup = 1
-  inoremap <expr><Tab> pumvisible() ? "\<DOWN>" : "\<Tab>"
-  inoremap <expr><S-Tab> pumvisible() ? "\<UP>" : "\<S-Tab>"
-'''
-if = 'has("nvim")'
-on_i = 1
-
-[[plugins]]
-repo = 'fatih/vim-go'
-on_ft = ['go']
-hook_source = '''
-  let g:go_fmt_command = "goimports"
-  let g:go_highlight_functions = 1
-  let g:go_highlight_methods = 1
-  let g:go_highlight_structs = 1
-  autocmd FileType go :highlight goErr cterm=bold ctermfg=214
-  autocmd FileType go :match goErr /\<err\>/
-'''
-
-[[plugins]]
 repo = 'Shougo/defx.nvim'
 if = 'has("nvim")'
-
-[[plugins]]
-repo = 'mattn/emmet-vim'
-on_ft = ["html", "css", "scss", "javascript", "vue"]
 
 [[plugins]]
 repo = 'vim-ruby/vim-ruby'
@@ -44,47 +17,4 @@ on_ft = ['ruby']
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
-
-# JavaScript syntax and Highlighting
-[[plugins]]
-repo = 'MaxMEllon/vim-jsx-pretty'
-on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
-hook_add = '''
-  let g:vim_jsx_pretty_highlight_close_tag = 1
-'''
-
-[[plugins]]
-repo = 'pangloss/vim-javascript'
-on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
-
-[[plugins]]
-repo = 'leafgarland/typescript-vim'
-on_ft = ['javascript', 'jsx', 'typescript', 'tsx']
-
-[[plugins]]
-repo = 'prettier/vim-prettier'
-build = 'yarn install'
-on_ft = ['javascript', 'jsx', 'typescript', 'tsx', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html']
-hook_add = '''
-  let g:prettier#autoformat = 0
-  let g:prettier#single_quote = 'true'
-  autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html PrettierAsync
-'''
-
-[[plugins]]
-repo = 'ianks/vim-tsx'
-on_ft = ['tsx']
-
-[[plugins]]
-repo = 'alampros/vim-styled-jsx'
-on_ft = ['javascript', 'jsx']
-
-[[plugins]]
-repo = 'galooshi/vim-import-js'
-on_ft = ['javascript', 'jsx']
-
-# async check
-[[plugins]]
-repo = 'w0rp/ale'
-on_ft = ['typescript', 'tsx', 'typescript', 'javascript', 'jsx']
 
