@@ -31,6 +31,19 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'simeji/winresizer'
+
+[[plugins]]
+repo = 'skanehira/code2img.vim'
+
+[[plugins]]
+repo = 'Shougo/vimshell.vim'
+
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
+build = 'make'
+
+[[plugins]]
 repo = 'jiangmiao/auto-pairs'
 
 [[plugins]]
@@ -42,6 +55,7 @@ repo = 'andymass/vim-matchup'
 [[plugins]]
 repo = 'prabirshrestha/async.vim'
 
+# Plugins related to vim-lsp
 [[plugins]]
 repo = 'prabirshrestha/asyncomplete.vim'
 
@@ -54,10 +68,3 @@ repo = 'prabirshrestha/vim-lsp'
 [[plugins]]
 repo = 'mattn/vim-lsp-settings'
 
-[[plugins]]
-repo = 'simeji/winresizer'
-
-[[plugins]]
-repo = 'skanehira/code2img.vim'
-
-[[plugins]]
