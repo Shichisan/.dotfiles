@@ -36,13 +36,10 @@ function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
   setlocal signcolumn=yes
   nmap <buffer> gd <plug>(lsp-definition)
-  nmap <buffer> <f2> <plug>(lsp-rename)
 endfunction
 
 augroup lsp_install
   au!
-  " call s:on_lsp_buffer_enabled only for languages that has the server registered.
-  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 
 let g:lsp_settings_servers_dir = expand('~/dev/src/vim-lsp')
@@ -53,7 +50,6 @@ set foldmethod=expr
 " If you would like to disable folding globally, you can add this to your configuration:
 let g:lsp_fold_enabled = 0
 
-let g:lsp_diagnostics_enabled = 0
 let g:lsp_sign_enabled = 1
 let g:lsp_signs_error = {'text': '✗'}
 " highlight references
@@ -66,8 +62,6 @@ let g:lsp_log_file = expand('~/.vim-lsp-debug.log')
 let g:asyncomplete_log_file = expand('~/.asyncomplete.log')
 set completeopt+=preview
 
-" vim coffeescript
-au BufRead, BufNewFile, BufReadPre *.coffee set filetype=coffee
 " indent
 autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
 
