@@ -46,9 +46,33 @@ endfunction
 
 augroup lsp_install
   au!
+  autocmd User lsp_buffer_enabled call s:on_buffer_enabled()
 augroup END
+command! LspDebug let lsp_log_verbose=1 | let lsp_lof_file = expand('~/.lsp-debug.log')
 
 let g:lsp_settings_servers_dir = expand('~/dev/src/vim-lsp')
+let g:lsp_diagnostics_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
+let g:autocomplete_popup_delay = 200
+let g:lsp_text_edit_enabled = 1
+let g:lsp_preview_float = 1
+let g:lsp_diagnostics_float_cursor = 1
+let g:lsp_settings_filetype_go = ['gopls', 'golangci-lint-langserver']
+let g:lsp_settings = {}
+let g:lsp_settings['gopls'] = {
+  \  'workspace_config': {
+  \    'usePlaceholders': v:true,
+  \    'analyses': {
+  \      'fillstruct': v:true,
+  \    },
+  \  },
+  \  'initialization_options': {
+  \    'usePlaceholders': v:true,
+  \    'analyses': {
+  \      'fillstruct': v:true,
+  \    },
+  \  },
+  \}
 
 set foldmethod=expr
   \ foldexpr=lsp#ui#vim#folding#foldexpr()
@@ -67,6 +91,7 @@ let g:lsp_log_file = expand('~/.vim-lsp-debug.log')
 " for asyncomplete.vim log
 let g:asyncomplete_log_file = expand('~/.asyncomplete.log')
 set completeopt+=preview
+set completeopt+=menuone
 
 " indent
 autocmd FileType coffee setlocal sw=2 sts=2 ts=2 et
