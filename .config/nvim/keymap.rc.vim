@@ -17,10 +17,6 @@ endfunction
 
 nnoremap g<C-a> ggVG<CR>
 
-" easymotion
-nmap <Leader>s <Plug>(easymotion-s2)
-xmap <Leader>s <Plug>(easymotion-s2)
-
 " mapping leader
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>x :x<CR>
@@ -28,13 +24,3 @@ nnoremap <Leader>w :w<CR>
 nnoremap <Leader>xa :xa<CR>
 nnoremap <Leader>qa :qa<CR>
 
-" vim-lsp keymappings
-nnoremap <Leader>] :LspDefinition<CR>
-nnoremap <Leader>p] :LspPeekDefinition<CR>
-nnoremap <Leader>h :LspHover<CR>
-nnoremap <Leader>re :LspRename<CR>
-nnoremap <Leader>st :LspStatus<CR>
-nnoremap <Leader>ref :LspReferences<CR>
-nnoremap <Leader>n :LspNextReference<CR>
-nnoremap <Leader>t :LspTypeDefinition<CR>
-nnoremap <Leader>pt :LspPeekTypeDefinition<CR>
