@@ -1,5 +1,5 @@
 function __fuzzy_checkout_branch -d "Fuzzy change git branch"
-  git branch | fzf --reverse | xargs git checkout
+  git branch | fzf --reverse | xargs git switch
 end
 alias fb __fuzzy_checkout_branch
 

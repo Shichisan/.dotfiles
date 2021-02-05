@@ -1,5 +1,6 @@
 # default editor
 set -U EDITOR nvim
+set -U VISUAL nvim
 
 # tmux
 set -x TERM xterm-256color
@@ -47,5 +48,3 @@ starship init fish | source
 # strap env
 set -x STRAP_DEVELOPER_ENV orca-dev-taiga
 
-# postgresql
-set -x PGDATA '/usr/local/var/postgres'

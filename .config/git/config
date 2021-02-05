@@ -24,6 +24,8 @@
   # short aliases
   st = status
   co = checkout
+  sw = switch
+  swc = switch -c
   ci = commit
   br = branch
   df = diff
