@@ -46,7 +46,7 @@ endfunction
 
 augroup lsp_install
   au!
-  autocmd User lsp_buffer_enabled call s:on_buffer_enabled()
+  autocmd User lsp_buffer_enabled call s:on_lsp_buffer_enabled()
 augroup END
 command! LspDebug let lsp_log_verbose=1 | let lsp_lof_file = expand('~/.lsp-debug.log')
 
