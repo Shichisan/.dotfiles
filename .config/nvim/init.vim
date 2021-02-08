@@ -29,12 +29,6 @@ if dein#check_install()
   call dein#install()
 endif
 
-let s:removed_plugins = dein#check_install()
-if len(s:removed_plugins) > 0
-  call map(s:removed_plugins, "delete(v:val, 'rf')")
-  call dein#recache_runtimepath()
-endif
-
 function s:source_rc(rc_file_name)
   let rc_file = expand(g:rc_dir . '/' . a:rc_file_name)
   if filereadable(rc_file)
