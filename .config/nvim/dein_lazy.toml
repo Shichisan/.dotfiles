@@ -21,3 +21,15 @@ on_ft = ['toml']
 [[plugins]]
 repo = 'mattn/vim-goimports'
 on_ft = ['go']
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+on_ft = ['ts', 'tsx']
+
+[[plugins]]
+repo = 'maxmellon/vim-jsx-pretty'
+on_ft = ['tsx']
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+on_ft = ['js', 'jsx', 'ts', 'tsx']
