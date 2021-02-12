@@ -1,6 +1,6 @@
 function cd
   builtin cd $argv
-  ll
+  ls -la
 end
 
 function history
