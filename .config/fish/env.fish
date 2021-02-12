@@ -28,9 +28,9 @@ set -g fish_user_paths "/usr/local/sbin" $fish_user_paths
 
 # imagemagick
 set -g fish_user_paths "/usr/local/opt/imagemagick@6/bin" $fish_user_paths
-# set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 
 # mysql
+set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 
 # flutter
 set -x PATH $HOME/dev/src/flutter/bin $PATH
