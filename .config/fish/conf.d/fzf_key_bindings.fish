@@ -47,3 +47,7 @@ function fzf_key_bindings_uninstall -e fzf_key_bindings_uninstall
     #     eval $binding
     # end
 end
+
+function fish_user_key_bindings
+  bind \cg ghq_fzf_repo
+end

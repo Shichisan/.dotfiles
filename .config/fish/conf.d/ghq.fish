@@ -1,5 +1,7 @@
-function __ghq_cd_repository -d "Change local repository directory"
-  ghq list --full-path | fzf --reverse | read -l repo_path
-  cd $repo_path
+function ghq_fzf_repo -d 'Repository Search'
+  ghq list --full-path | fzf --reverse --height=100% | read select
+  [ -n "$select" ]; and cd "$select"
+  echo " $select "
+  commandline -f repaint
 end
-bind \ck __ghq_cd_repository
+
