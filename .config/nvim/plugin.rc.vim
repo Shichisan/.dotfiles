@@ -37,6 +37,7 @@ function! s:on_lsp_buffer_enabled() abort
   setlocal signcolumn=yes
   nmap <buffer> gd <plug>(lsp-definition)
   nmap <buffer> <C-]> <plug>(lsp-definition)
+  nmap <buffer> <C-h> <plug>(lsp-hover)
   nmap <buffer> <leader>re <plug>(lsp-rename)
   nmap <buffer> <leader>d <plug>(lsp-type-definition)
   nmap <buffer> <leader>r <plug>(lsp-references)
