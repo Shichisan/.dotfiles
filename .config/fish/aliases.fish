@@ -12,7 +12,6 @@ alias dc "docker-compose"
 # neovim
 alias n "nvim"
 # npm, yarn
-alias ns 'npm start'
 alias ys 'yarn start'
 alias ysd 'yarn start:developer'
 alias ydd 'yarn deploy:developer'
