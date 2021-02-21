@@ -37,6 +37,18 @@ repo = 'lambdalisue/fern.vim'
 repo = 'antoinemadec/FixCursorHold.nvim'
 
 [[plugins]]
+repo = 'lambdalisue/fern-git-status.vim'
+
+[[plugins]]
+repo = 'lambdalisue/nerdfont.vim'
+
+[[plugins]]
+repo = 'lambdalisue/fern-renderer-nerdfont.vim'
+
+[[plugins]]
+repo = 'lambdalisue/glyph-palette.vim'
+
+[[plugins]]
 repo = 'simeji/winresizer'
 
 [[plugins]]

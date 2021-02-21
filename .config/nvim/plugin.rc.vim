@@ -31,6 +31,16 @@ let g:fzf_buffers_jump = 1
 " matchup
 let g:loaded_matchit = 1
 
+" Fern.vim
+let g:fern#renderer = 'nerdfont'
+
+" colorize icon for Fern
+augroup my-glyph-palette
+  autocmd! *
+  autocmd FileType fern call glyph_palette#apply()
+  autocmd FileType nerdtree,startify call glyph_palette#apply()
+augroup END
+
 " vim-lsp
 function! s:on_lsp_buffer_enabled() abort
   setlocal omnifunc=lsp#complete
