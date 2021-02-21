@@ -31,6 +31,12 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'lambdalisue/fern.vim'
+
+[[plugins]]
+repo = 'antoinemadec/FixCursorHold.nvim'
+
+[[plugins]]
 repo = 'simeji/winresizer'
 
 [[plugins]]

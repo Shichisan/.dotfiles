@@ -4,6 +4,8 @@ let g:user_emmet_leader_key='<C-t>'
 " ripgrep
 nnoremap <silent><C-k> :Rg<CR>
 
+" Fern.vim
+nnoremap <silent><C-e> :Fern . -reveal=% -drawer -toggle -width=30<CR>
 
 " fzf
 nnoremap <silent><C-i> :FZF --reverse <CR>
