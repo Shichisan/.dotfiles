@@ -1,8 +1,4 @@
 [[plugins]]
-repo = 'Shougo/defx.nvim'
-if = 'has("nvim")'
-
-[[plugins]]
 repo = 'vim-ruby/vim-ruby'
 on_ft = ['ruby']
 

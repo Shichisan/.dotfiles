@@ -4,8 +4,6 @@ let g:user_emmet_leader_key='<C-t>'
 " ripgrep
 nnoremap <silent><C-k> :Rg<CR>
 
-" defx.nvim
-nnoremap <silent><C-e> :Defx<CR>
 
 " fzf
 nnoremap <silent><C-i> :FZF --reverse <CR>
