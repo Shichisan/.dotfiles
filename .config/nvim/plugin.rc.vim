@@ -4,8 +4,8 @@ let g:user_emmet_leader_key='<C-t>'
 " ripgrep
 nnoremap <silent><C-k> :Rg<CR>
 
-" defx.nvim
-nnoremap <silent><C-e> :Defx<CR>
+" Fern.vim
+nnoremap <silent><C-e> :Fern . -reveal=% -drawer -toggle -width=30<CR>
 
 " fzf
 nnoremap <silent><C-i> :FZF --reverse <CR>
@@ -30,6 +30,16 @@ let g:fzf_buffers_jump = 1
 
 " matchup
 let g:loaded_matchit = 1
+
+" Fern.vim
+let g:fern#renderer = 'nerdfont'
+
+" colorize icon for Fern
+augroup my-glyph-palette
+  autocmd! *
+  autocmd FileType fern call glyph_palette#apply()
+  autocmd FileType nerdtree,startify call glyph_palette#apply()
+augroup END
 
 " vim-lsp
 function! s:on_lsp_buffer_enabled() abort
