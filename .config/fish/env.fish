@@ -5,14 +5,6 @@ set -U VISUAL nvim
 # tmux
 set -x TERM xterm-256color
 
-# neovim python path
-set -x NVIM_PYTHON_LOG_FILE /tmp/log
-set -x NVIM_PYTHON_LOG_LEVEL DEBUG
-
-# neovim ruby path
-set -x NVIM_RUBY_LOG_FILE /tmp/log
-set -x NVIM_RUBY_LOG_LEVEL DEBUG
-
 # anyenv paths
 set -x PATH $HOME/.anyenv/bin $PATH
 source (anyenv init - | psub)

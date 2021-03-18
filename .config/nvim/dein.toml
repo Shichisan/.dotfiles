@@ -49,9 +49,6 @@ repo = 'lambdalisue/fern-renderer-nerdfont.vim'
 repo = 'lambdalisue/glyph-palette.vim'
 
 [[plugins]]
-repo = 'simeji/winresizer'
-
-[[plugins]]
 repo = 'skanehira/code2img.vim'
 
 [[plugins]]

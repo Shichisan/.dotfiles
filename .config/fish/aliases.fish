@@ -22,7 +22,6 @@ alias yt 'yarn test'
 alias b "bundle exec"
 alias rs "bundle exec rails server -b '0.0.0.0'"
 alias rc "bundle exec rails console"
-alias rcs "bundle exec rails console -s"
 alias brs 'bundle exec rspec'
 alias kiq "bundle exec sidekiq -C config/sidekiq.yml"
 alias cop "bundle exec rubocop"
