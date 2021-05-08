@@ -9,6 +9,7 @@ shell:
 window:
   decolations: buttonless
   startup_mode: SimpleFullScreen
+background_opacity: 0.95
 
 font:
   size: 12.5
@@ -18,3 +19,6 @@ font:
     family: Menlo
   italic:
     family: Menlo
+
+env:
+  TERM: alacritty
