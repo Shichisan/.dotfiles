@@ -62,8 +62,8 @@ augroup END
 command! LspDebug let lsp_log_verbose=1 | let lsp_lof_file = expand('~/.lsp-debug.log')
 
 let g:lsp_settings_servers_dir = expand('~/dev/src/vim-lsp')
-let g:lsp_diagnostics_enabled = 1
-let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_diagnostics_enabled = 0
+let g:lsp_diagnostics_echo_cursor = 0
 let g:autocomplete_popup_delay = 200
 let g:lsp_text_edit_enabled = 1
 let g:lsp_preview_float = 1
