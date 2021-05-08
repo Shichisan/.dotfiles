@@ -32,7 +32,7 @@ create_dotfiles_symlink() {
 
     if [[ ! -e $dotfile ]] && [[ $dotfile != 'README.md' ]] && [[ $dotfile != 'deploy.sh' ]]; then
       echo "Make symlink $src"
-      # ln -s $src $dotfile
+      ln -s $src $dotfile
     fi
   done
 }
