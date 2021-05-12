@@ -2,9 +2,6 @@
 set -U EDITOR nvim
 set -U VISUAL nvim
 
-# tmux
-set -x TERM xterm-256color
-
 # anyenv paths
 set -x PATH $HOME/.anyenv/bin $PATH
 source (anyenv init - | psub)
@@ -26,10 +23,6 @@ set -g fish_user_paths "/usr/local/opt/mysql@5.6/bin" $fish_user_paths
 
 # flutter
 set -x PATH $HOME/dev/src/flutter/bin $PATH
-
-# fzf
-set -x FZF_DEFAULT_COMMAND 'fd --type f --hidden --follow --exclude .git'
-set -x FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
 
 # awscli
 set -x PATH $HOME/.local/bin $PATH
