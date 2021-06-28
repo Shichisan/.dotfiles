@@ -14,11 +14,11 @@ background_opacity: 0.95
 font:
   size: 13.5
   normal:
-    family: Menlo
+    family: Hack Nerd Font Mono
   bold:
-    family: Menlo
+    family: Hack Nerd Font Mono
   italic:
-    family: Menlo
+    family: Hack Nerd Font Mono
 
 env:
   TERM: alacritty

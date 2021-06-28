@@ -33,3 +33,5 @@ starship init fish | source
 # strap env
 set -x STRAP_DEVELOPER_ENV orca-dev-taiga
 
+# nerd fonts
+set -g theme_nerd_fonts yes
