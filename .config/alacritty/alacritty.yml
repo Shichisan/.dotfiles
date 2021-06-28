@@ -1,0 +1,24 @@
+# ターミナル起動時にtmuxを起動する
+shell:
+  program: /usr/local/bin/fish
+  args:
+    - -l
+    - -c
+    - 'tmux attach || tmux'
+
+window:
+  decolations: buttonless
+  startup_mode: SimpleFullScreen
+background_opacity: 0.95
+
+font:
+  size: 13.5
+  normal:
+    family: Hack Nerd Font Mono
+  bold:
+    family: Hack Nerd Font Mono
+  italic:
+    family: Hack Nerd Font Mono
+
+env:
+  TERM: alacritty

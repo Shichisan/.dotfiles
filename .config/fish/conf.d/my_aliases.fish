@@ -7,3 +7,4 @@ function __fuzzy_delete_branch -d "Fuzzy delete git branch"
   git branch | fzf --reverse | xargs git branch -D
 end
 alias fbd __fuzzy_delete_branch
+
